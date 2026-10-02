@@ -146,6 +146,126 @@
       suggestedSection.append(list);
     }
     if (report.disclaimer) results.append(make("p", "report-disclaimer", report.disclaimer));
+
+    // Final plain-language summary card — always last
+    renderFinalSummary(report, results);
+  };
+
+  const renderFinalSummary = (report, parent) => {
+    const findings = Array.isArray(report.findings) ? report.findings : [];
+    const unresolved = report.unresolved_items || [];
+
+    // Group findings by severity
+    const bySeverity = {};
+    for (const f of findings) {
+      const sev = (f.severity || "UNSPECIFIED").toUpperCase();
+      (bySeverity[sev] = bySeverity[sev] || []).push(f);
+    }
+    const majors   = bySeverity["MAJOR"]       || [];
+    const mods     = bySeverity["MODERATE"]    || [];
+    const minors   = bySeverity["MINOR"]       || [];
+    const unknowns = bySeverity["UNSPECIFIED"] || [];
+
+    // Build "ask pharmacist" list from recommendations in findings
+    const pharmacistItems = [];
+    for (const f of findings) {
+      const rec  = f.explanation?.recommendation;
+      const head = f.explanation?.headline;
+      const sev  = f.severity || "UNSPECIFIED";
+      if (rec && rec !== "—") pharmacistItems.push({ head, rec, sev });
+    }
+    for (const u of unresolved) {
+      pharmacistItems.push({ head: u.item, rec: `Could not be identified: ${u.reason}. Ask your pharmacist to verify.`, sev: "UNRESOLVED" });
+    }
+
+    const card = make("section", "final-summary-card");
+    card.setAttribute("aria-label", "Final summary");
+    card.append(make("h3", "final-summary-title", "📋 What You Need to Know"));
+
+    // ── What was analysed ──
+    const statuses = report.checker_status || [];
+    const ranChecks = statuses.filter(s => s.status === "RAN" || s.status === "PARTIAL").map(s => s.checker);
+    const analysedBlock = make("div", "fs-block");
+    analysedBlock.append(make("p", "fs-label", "✅ What was analysed"));
+    const analysedList = make("ul", "fs-list");
+    if (ranChecks.length) {
+      for (const name of ranChecks) analysedList.append(make("li", "", name));
+    } else {
+      analysedList.append(make("li", "fs-none", "No checks ran — check input."));
+    }
+    analysedBlock.append(analysedList);
+    card.append(analysedBlock);
+
+    // ── Risks found ──
+    const risksBlock = make("div", "fs-block");
+    risksBlock.append(make("p", "fs-label", "⚠️ Risks found"));
+    if (!findings.length) {
+      risksBlock.append(make("p", "fs-none", "No flagged interactions or issues detected by the checks that ran."));
+    } else {
+      if (majors.length) {
+        const g = make("div", "fs-severity-group");
+        g.append(make("p", "fs-sev-label fs-major", `🔴 MAJOR (${majors.length})`));
+        const ul = make("ul", "fs-list");
+        for (const f of majors) ul.append(make("li", "", f.explanation?.headline || f.finding_type || ""));
+        g.append(ul);
+        risksBlock.append(g);
+      }
+      if (mods.length) {
+        const g = make("div", "fs-severity-group");
+        g.append(make("p", "fs-sev-label fs-moderate", `🟡 MODERATE (${mods.length})`));
+        const ul = make("ul", "fs-list");
+        for (const f of mods) ul.append(make("li", "", f.explanation?.headline || f.finding_type || ""));
+        g.append(ul);
+        risksBlock.append(g);
+      }
+      if (minors.length) {
+        const g = make("div", "fs-severity-group");
+        g.append(make("p", "fs-sev-label fs-minor", `🟢 MINOR (${minors.length})`));
+        const ul = make("ul", "fs-list");
+        for (const f of minors) ul.append(make("li", "", f.explanation?.headline || f.finding_type || ""));
+        g.append(ul);
+        risksBlock.append(g);
+      }
+      if (unknowns.length) {
+        const g = make("div", "fs-severity-group");
+        g.append(make("p", "fs-sev-label fs-unknown", `⚪ UNSPECIFIED (${unknowns.length})`));
+        const ul = make("ul", "fs-list");
+        for (const f of unknowns) ul.append(make("li", "", f.explanation?.headline || f.finding_type || ""));
+        g.append(ul);
+        risksBlock.append(g);
+      }
+    }
+    card.append(risksBlock);
+
+    // ── Ask your pharmacist ──
+    const askBlock = make("div", "fs-block fs-ask");
+    askBlock.append(make("p", "fs-label", "💬 Ask your pharmacist about"));
+    if (!pharmacistItems.length) {
+      askBlock.append(make("p", "fs-none", "No specific questions generated — review findings above."));
+    } else {
+      const ul = make("ul", "fs-list");
+      for (const item of pharmacistItems) {
+        const li = make("li");
+        li.append(make("strong", "", `${item.head}: `));
+        li.append(document.createTextNode(item.rec));
+        ul.append(li);
+      }
+      askBlock.append(ul);
+    }
+    card.append(askBlock);
+
+    // ── Overall action line ──
+    const urgency = majors.length ? "🔴 Major risks detected — do not proceed without pharmacist review."
+      : mods.length ? "🟡 Moderate risks detected — discuss with your pharmacist before use."
+      : minors.length ? "🟢 Minor issues noted — pharmacist check recommended."
+      : "ℹ️ No rule-based risks flagged by checks that ran. Pharmacist review still recommended.";
+    const actionPara = make("p", "fs-action", urgency);
+    card.append(actionPara);
+
+    // ── Disclaimer reminder ──
+    card.append(make("p", "fs-disclaimer", "This is a research prototype. Output is decision support only — not a clinical recommendation. Always consult a licensed pharmacist or prescriber."));
+
+    parent.append(card);
   };
 
   const requestBody = () => {
