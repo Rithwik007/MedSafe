@@ -144,9 +144,15 @@ class GroqClient:
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": prompt}],
             "temperature": 0,
-            "max_tokens": 400,
+            "max_completion_tokens": 800,
             "stream": False,
         }).encode("utf-8")
+        if self._model.startswith("openai/gpt-oss-"):
+            request_payload = json.loads(payload)
+            request_payload["reasoning_effort"] = "low"
+            if "json" in system.casefold():
+                request_payload["response_format"] = {"type": "json_object"}
+            payload = json.dumps(request_payload).encode("utf-8")
         for attempt in range(2):
             if not _claim_groq_request():
                 raise ProviderError("Provider request limit reached.")

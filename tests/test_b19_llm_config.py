@@ -97,6 +97,7 @@ def test_groq_request_format_and_content_free_failure(monkeypatch):
     assert seen["url"] == "https://api.groq.com/openai/v1/chat/completions"
     assert seen["payload"]["model"] == "model-from-test"
     assert seen["payload"]["temperature"] == 0
+    assert seen["payload"]["max_completion_tokens"] == 800
     assert seen["payload"]["messages"] == [
         {"role": "system", "content": "synthetic system"},
         {"role": "user", "content": "synthetic prompt"},
@@ -111,6 +112,21 @@ def test_groq_request_format_and_content_free_failure(monkeypatch):
     with pytest.raises(llm_client.ProviderError) as error:
         llm_client.GroqClient(config).complete("synthetic system", "synthetic prompt")
     assert sentinel not in str(error.value)
+
+def test_groq_gpt_oss_uses_low_reasoning_effort(monkeypatch):
+    class Response:
+        def __enter__(self): return self
+        def __exit__(self, *_args): return False
+        def read(self): return b'{"choices":[{"message":{"content":"ok"}}]}'
+    seen = {}
+    def fake_open(request, timeout):
+        seen["payload"] = json.loads(request.data)
+        return Response()
+    monkeypatch.setattr(llm_client.urllib.request, "urlopen", fake_open)
+    llm_client.reset_groq_request_budget()
+    llm_client.GroqClient(LlmConfig(True, "test-key", "openai/gpt-oss-120b", "groq")).complete("Return JSON only.", "p")
+    assert seen["payload"]["reasoning_effort"] == "low"
+    assert seen["payload"]["response_format"] == {"type": "json_object"}
 
 
 def test_groq_retries_429_once_and_then_falls_back(monkeypatch):

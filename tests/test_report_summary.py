@@ -34,11 +34,12 @@ def test_aggregate_summary_contains_only_counts_and_checker_states():
 
 def test_report_summary_guard_requires_supported_severity_count_and_rejects_medical_advice():
     facts = {"checkers": [{"name": "DDI", "status": "RAN", "rules_loaded": 3}],
+             "checker_status_counts": {"RAN": 1}, "finding_count": 1,
              "severity_counts": {"MAJOR": 1}, "finding_type_counts": {},
              "unresolved_item_count": 0, "suggested_match_count": 0}
-    good = {"what_ran": "DDI RAN with 3 rules loaded.",
+    good = {"what_ran": "DDI RAN, 1 RAN.",
             "what_it_found": "1 MAJOR finding.",
-            "issues": "0 unresolved items.",
+            "issues": "0 unresolved items and 0 suggested matches.",
             "takeaway": "Review the finding using the provided details."}
     assert guard_report_summary(json.dumps(good), facts) == good
     bad = {**good, "takeaway": "This is safe to use."}
@@ -50,13 +51,19 @@ def test_report_summary_guard_requires_supported_severity_count_and_rejects_medi
 def test_report_summary_provider_gets_aggregate_facts_only():
     from medsafe.llm.report_summary import generate_report_summary
     value = report()
-    fake = FakeClient({"what_ran": "0 checks ran.", "what_it_found": "0 findings.",
-                       "issues": "0 unresolved items.",
+    facts = aggregate_facts(value)
+    checker_text = ", ".join(f"{item['name']} {item['status']}" for item in facts["checkers"])
+    checker_text += "; " + ", ".join(f"{count} {status}" for status, count in facts["checker_status_counts"].items())
+    fake = FakeClient({"what_ran": checker_text,
+                       "what_it_found": (f"{facts['finding_count']} findings." if facts["finding_count"] else "No findings were reported."),
+                       "issues": f"{facts['unresolved_item_count']} unresolved items and "
+                                 f"{facts['suggested_match_count']} suggested matches.",
                        "takeaway": "Review the provided details."})
     summary, _ = generate_report_summary(value, fake)
     assert summary is not None
     sent = json.loads(fake.prompt[1])
-    assert set(sent) == {"checkers", "severity_counts", "finding_type_counts",
+    assert set(sent) == {"checkers", "checker_status_counts", "finding_count",
+                         "severity_counts", "finding_type_counts",
                          "unresolved_item_count", "suggested_match_count"}
     assert "findings" not in sent and "patient" not in sent
 
