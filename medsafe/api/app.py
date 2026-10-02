@@ -15,6 +15,33 @@ app = FastAPI(title="MedSafe", description="Medication safety decision-support d
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 CSP_VALUE = "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
 
+# Pre-compute config once at startup — avoids SHA-256 model check on every /config request.
+def _build_cached_config() -> dict:
+    from medsafe.checkers.engine import _load_ml_predictor
+    from medsafe.llm.client import LlmConfig, readiness
+    try:
+        app_version = version("medsafe")
+    except PackageNotFoundError:
+        app_version = "0.1.0"
+    try:
+        ml_available = _load_ml_predictor().state == "ENABLED"
+    except Exception:
+        ml_available = False
+    try:
+        cfg = LlmConfig.from_env()
+        llm_available = readiness(cfg, True)[0] == "ENABLED"
+    except Exception:
+        llm_available = False
+    return {"ml_available": ml_available, "llm_available": llm_available, "version": app_version}
+
+_CACHED_CONFIG: dict = {}
+
+@app.on_event("startup")
+async def _startup():
+    global _CACHED_CONFIG
+    _CACHED_CONFIG = _build_cached_config()
+
+
 
 @app.middleware("http")
 async def content_security_policy(request: Request, call_next):
@@ -63,16 +90,7 @@ def static_asset(asset_name: str):
 
 @app.get("/config")
 def config():
-    from medsafe.checkers.engine import _load_ml_predictor
-    from medsafe.llm.client import LlmConfig, readiness
-    try:
-        app_version = version("medsafe")
-    except PackageNotFoundError:
-        app_version = "0.1.0"
-    ml_available = _load_ml_predictor().state == "ENABLED"
-    llm_available = readiness(LlmConfig.from_env(), True)[0] == "ENABLED"
-    return {"ml_available": ml_available, "llm_available": llm_available,
-            "version": app_version}
+    return _CACHED_CONFIG if _CACHED_CONFIG else _build_cached_config()
 
 
 @app.get("/health")
