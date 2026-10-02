@@ -69,7 +69,7 @@
 
     const summary = make("p", "api-summary", report.overall_statement || "");
     results.append(summary);
-    const overviewSection = appendSection(results, "Plain-language overview", "plain-overview");
+    const overviewSection = appendSection(results, "What you need to know", "plain-overview");
     const overviewContent = make("div", "overview-content");
     overviewSection.append(overviewContent);
     renderStructuredOverview(report, overviewContent);
