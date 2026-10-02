@@ -1,0 +1,11 @@
+rule_id,source_excerpt
+B14-ALG-001,Amoxicillin capsules are contraindicated in patients who have experienced a serious hypersensitivity reaction
+B14-ALG-002,Ibuprofen tablets are contraindicated in patients with known hypersensitivity to ibuprofen.
+B14-ALG-003,Ciprofloxacin is contraindicated in persons with a history of hypersensitivity to ciprofloxacin
+B14-ALG-004,Fluconazole tablets are contraindicated in patients who have shown hypersensitivity to fluconazole
+B14-ALG-005,Azithromycin tablets are contraindicated in patients with known hypersensitivity to azithromycin.
+B14-DIS-001,Levothyroxine sodium tablets are contraindicated in patients with uncorrected adrenal insufficiency
+B14-DIS-002,Azithromycin tablets are contraindicated in patients with a history of cholestatic jaundice/hepatic dysfunction associated with prior use of azithromycin.
+B14-DIS-003,Ibuprofen tablets are contraindicated in the setting of coronary artery bypass graft (CABG) surgery
+B14-DIS-004,"Fluoroquinolones, including Ciprofloxacin, may exacerbate muscle weakness in patients with myasthenia gravis."
+B14-DIS-005,A high percentage of patients with mononucleosis who receive amoxicillin develop an erythematous skin rash.

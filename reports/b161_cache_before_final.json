@@ -1,0 +1,382 @@
+[
+  {
+    "path": "medsafe/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "9071a5100963e79eb71ef0f572e87e7188bb107fd9f9696758adfdefc8e6b112"
+  },
+  {
+    "path": "medsafe/api/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "1e48cb2621cd1ba3510945a8aaf66488567b36ac0d1ce9354794e2e1fcd2e1f3"
+  },
+  {
+    "path": "medsafe/api/__pycache__/app.cpython-311.pyc",
+    "sha256": "1e334e22227ce935027bc2c4857d5fd7444749db7586fcf509c36f66214ee5c5"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "c152337a76c7dea81a1ec8ba91b121e4890f23b81cd24dd549807f2d97c109a0"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/allergy.cpython-311.pyc",
+    "sha256": "7b13d07566ed7dc2dcd5986d835da855371129ae2ae06903ff145e61ec2570e8"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/ddi.cpython-311.pyc",
+    "sha256": "6577c99168dcbac08f2c64e8e1b368b13bb59c6201345984cc66fe37f1acf7fc"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/drug_disease.cpython-311.pyc",
+    "sha256": "d19b38639b933373c355f53e76a878d97062f9ab40a4ff27053662d902ecf25f"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/duplicate.cpython-311.pyc",
+    "sha256": "db3ce2ff8fc84412eeb1460b0cce7adba16271c75f1325f4ba2d1d9b52f3a735"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/engine.cpython-311.pyc",
+    "sha256": "b8b8515db3db0ad695f217ccf764f29ec354274c3050380ec7ea436856e8cce6"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/ingredients.cpython-311.pyc",
+    "sha256": "9970cdee0eead336a573185e853c0cf2365e9060e2711e74f874a66e9867392d"
+  },
+  {
+    "path": "medsafe/checkers/__pycache__/stubs.cpython-311.pyc",
+    "sha256": "2a90ccdfa22f1af76dd8f554826e5fc66d63fece07f3f74332341ed4b0f31bc2"
+  },
+  {
+    "path": "medsafe/core/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "9ff59c4b3f91fdf247d897ff7c931b6a8e38c18b21f9ea75628256f0bc313b52"
+  },
+  {
+    "path": "medsafe/core/__pycache__/ingredient_names.cpython-311.pyc",
+    "sha256": "5b71d51df03da4b99823110dd00fd37ab6eb465e0cb16c7e234583ca06cc1d1d"
+  },
+  {
+    "path": "medsafe/core/__pycache__/normalizer.cpython-311.pyc",
+    "sha256": "9277d16d264d6d689f856764eabcb8f3769a90684ac3e7a104a2efb9bc91295a"
+  },
+  {
+    "path": "medsafe/core/__pycache__/report.cpython-311.pyc",
+    "sha256": "fc1dbfd51640df093436b047bfb571dd4b6d5b8cbfe945d3ff0b630edfe7f917"
+  },
+  {
+    "path": "medsafe/explain/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "5d36ee919e5e93403c7f78c4795ce6537ab087ad085f5c0eb692e1ff75db4a69"
+  },
+  {
+    "path": "medsafe/explain/__pycache__/templates.cpython-311.pyc",
+    "sha256": "d24b629ad359d6b025eede39970046a957892dd651f59ffda32386e8f815ee82"
+  },
+  {
+    "path": "medsafe/kb/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "1fd38cdd1257af3b177da2c58ba2dd5cab9f4d81857e8078c38a232c7aa09e53"
+  },
+  {
+    "path": "medsafe/kb/__pycache__/graph.cpython-311.pyc",
+    "sha256": "1bce759d6c51c1ccc15d378b69736c79987c2f398359762d9f793cc3e0dab40d"
+  },
+  {
+    "path": "medsafe/kb/__pycache__/rules.cpython-311.pyc",
+    "sha256": "4145d8a98f7c4e9929937387921adc874109ba668f455e35d347b1d88efbc3ff"
+  },
+  {
+    "path": "medsafe/llm/__pycache__/client.cpython-311.pyc",
+    "sha256": "b0cb23c61764d6a9ac9e5bbe528b37214a7386c799fc7818e28b824b7b188c9f"
+  },
+  {
+    "path": "medsafe/llm/__pycache__/parser_fallback.cpython-311.pyc",
+    "sha256": "905e9351285677c23b1f68dfc88c8c39a332086d7edf670dbadd6b8071942c0e"
+  },
+  {
+    "path": "medsafe/llm/__pycache__/service.cpython-311.pyc",
+    "sha256": "b978e70df9a0a1ee1d2bcd3f017831aee48a87b684bd81ef6341aad665d974b7"
+  },
+  {
+    "path": "medsafe/llm/__pycache__/summaries.cpython-311.pyc",
+    "sha256": "17004a43c154d9313ebf2baf8f3c8729adea219f9c1ddcf9f4ed1b32dfc8d715"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "54ff910ebf2d27889e8f5ac8909df1842e47f642198a999773b6d2dfd02423ac"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/artifacts.cpython-311.pyc",
+    "sha256": "f7d81d8d5b7cd81c55fb501ebb7d01dff3cb41d6d6eae3a7e6f103f2feb2e37e"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/config.cpython-311.pyc",
+    "sha256": "b8ba7d538702bd29ddcbf1690b1a9bf2fb4c3f605e8d6ab8c7b26f6bad591731"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/data.cpython-311.pyc",
+    "sha256": "6598c065eb585170f182cbb1de4fe95057330387396fa451eecbfac7500da8b6"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/features.cpython-311.pyc",
+    "sha256": "4dfb681a2328fa744d8d5641258e5fe86fa2997b76986bb5c506f0b2833c4b24"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/predict.cpython-311.pyc",
+    "sha256": "2c922f0c21c2574885195589297a4ffb845505880e16f6af849e7adccff583b0"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/reporting.cpython-311.pyc",
+    "sha256": "d883522b6b9af1ffc5182ab5d30efa9be2315246b8831b0d6380e6ee47584e41"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/splits.cpython-311.pyc",
+    "sha256": "014cb09d2b3bbfd9f757f17c6e3f9c793421d4a66bdc599929d24c86f81504bd"
+  },
+  {
+    "path": "medsafe/ml/__pycache__/training.cpython-311.pyc",
+    "sha256": "756299422f3527e561dc52b55368050d06b9ddf57f53af86b9b62d785c55d257"
+  },
+  {
+    "path": "medsafe/models/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "47551807dac2cad9b7ed5a80680f9b498d8c612c6975d1fe7fda9bb6e667241c"
+  },
+  {
+    "path": "medsafe/models/__pycache__/domain.cpython-311.pyc",
+    "sha256": "0c0657163ff0684164f51ca7879afd617b39d343d6585a6ee4d2a80a7f14afd3"
+  },
+  {
+    "path": "medsafe/nlp/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "82d60b89887c9151d0707413d9b0dcfc0c91f58a092d5661b86f71aa1e466327"
+  },
+  {
+    "path": "medsafe/nlp/__pycache__/parser.cpython-311.pyc",
+    "sha256": "c287cc2f23cc5ba049460742b2fc66a6746e1b4634aecde0ae53e90dde940f6b"
+  },
+  {
+    "path": "scripts/__pycache__/apply_review.cpython-311.pyc",
+    "sha256": "548ffa9ce7ba2646043aaf1d4890f2baf7d27603e54bb0de96436f98d19460d6"
+  },
+  {
+    "path": "scripts/__pycache__/audit_ddinter_import.cpython-311.pyc",
+    "sha256": "989de3dd27f9b65292f617159cbb2f824dc35daf47545c760558376c57d0b746"
+  },
+  {
+    "path": "scripts/__pycache__/export_ml_spotcheck.cpython-311.pyc",
+    "sha256": "7188d8a6722c5e22bb838154441b84b2b81a246197d77394d3e95d2188f4dd60"
+  },
+  {
+    "path": "scripts/__pycache__/export_ml_spotcheck_b10_2.cpython-311.pyc",
+    "sha256": "5d73a65203ab28f03f75b02377c032f313a39b20d7ac863097ba101734580cce"
+  },
+  {
+    "path": "scripts/__pycache__/export_review_sheet.cpython-311.pyc",
+    "sha256": "15eb0c05406761fecc035ce7dccbeb67aae8092823af542b82fb7fb00ceb4393"
+  },
+  {
+    "path": "scripts/__pycache__/import_ddinter.cpython-311.pyc",
+    "sha256": "b2d5de1b825cb0be1bf036fca220f019e365c0f19f5c301bee856cbb7605734a"
+  },
+  {
+    "path": "scripts/__pycache__/tally_spotcheck.cpython-311.pyc",
+    "sha256": "410b9028ccd0833b618876ee5baca2ce5b0f8cc82b33305e7e55afb4e19fc1f1"
+  },
+  {
+    "path": "scripts/__pycache__/train_severity_model.cpython-311.pyc",
+    "sha256": "f03c7f9c58ad7149cedd5d3689aa2093022af11d454eefb693316c4937ef7cc6"
+  },
+  {
+    "path": "scripts/__pycache__/validate_checker_csvs.cpython-311.pyc",
+    "sha256": "b9be519a10816bff5c8753cffef0013fa6c0660b3e1e7edfa1d20bd97fc1faad"
+  },
+  {
+    "path": "tests/__pycache__/test_checker_csv_loaders.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "4852f4ff176e549f7d9c7d6412b485b85669a2b46f2e76978f50bf38158bac27"
+  },
+  {
+    "path": "tests/__pycache__/test_ddi_combo.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "71c9cbc0f69ddad8e91dab0c13a67d9f6e3c90053a1c1e06d7f8e00ab39c382e"
+  },
+  {
+    "path": "tests/__pycache__/test_duplicate.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "b3b4de73a0c6e66bd4943da118c0d81416cf8beb817229db92e910030f6d162e"
+  },
+  {
+    "path": "tests/__pycache__/test_explain.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "73739f2e40b78a36837998930944448dd8ebafa625a329bb521aca38dcfe75bf"
+  },
+  {
+    "path": "tests/__pycache__/test_llm_layer.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "afd9ef4d5282858155c782a5a98c18a4eeabc5a6406c6a8d0ccbd4e327e4ec34"
+  },
+  {
+    "path": "tests/__pycache__/test_medsafe.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "8703e392a0a6b2b07d87e13d0b0cbd084cb8794a2419111ccb820a04ae5e08d7"
+  },
+  {
+    "path": "tests/__pycache__/test_medsafe.cpython-311.pyc",
+    "sha256": "51a3c6709f4edc7c7b220f219c55bdc4673126fe89b0c91a837abc093263e303"
+  },
+  {
+    "path": "tests/__pycache__/test_ml_pipeline.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "b57aed1a9580d610d5ebc6775ff8e73a013339e3401aca9f3b8b5b676d0cf8f8"
+  },
+  {
+    "path": "tests/__pycache__/test_ml_reporting.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "6a5757605cd6f741eb5cbd418b20e1a85e2902965f70221c86c25939d6a2f8d2"
+  },
+  {
+    "path": "tests/__pycache__/test_ml_spotcheck.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "68e13009a27f19148d27281c620105329a85a3b4ecdb282eb96544b686707b75"
+  },
+  {
+    "path": "tests/__pycache__/test_ml_spotcheck_b10_2.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "cde7a67db7e6d035ce1d16b6457b9896dd58a2ed999c904bd47b92968e69ec34"
+  },
+  {
+    "path": "tests/__pycache__/test_normalizer.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "0410e5482894bb559150fd8b4c029c071d56e00b382939e53d5a9e798ac18c43"
+  },
+  {
+    "path": "tests/__pycache__/test_normalizer.cpython-311.pyc",
+    "sha256": "8a125bcb60f098deaee051aebc385cd6a90f56901ea0eb22e5b561f2ed177a7a"
+  },
+  {
+    "path": "tests/__pycache__/test_parser_rx.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "0df68143b867954ffec6a47dbfbc1a7bdaf1f0c8b5f4cffb6b15eb525dd9aba8"
+  },
+  {
+    "path": "tests/__pycache__/test_report.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "25c0c1e4f268d291a705e2bb9a8e8fb39487c00a46e79c234aa2ebe706ef13c6"
+  },
+  {
+    "path": "tests/__pycache__/test_tally_spotcheck.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "c9afc391f1da224a54855e91a55eb920976326ac0f07819956543df7e5dd3fcb"
+  },
+  {
+    "path": "tests/__pycache__/test_validate_checker_csvs.cpython-311-pytest-9.1.1.pyc",
+    "sha256": "8879f3ad39f2dc74503c3da289029c4f0fb326df96666efab5152ab821e9d55f"
+  },
+  {
+    "path": "ui/__pycache__/app.cpython-311.pyc",
+    "sha256": "14572b2e68d2459a63e405d7c7abff5947095f848840a2562ec58435e7763937"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "9071a5100963e79eb71ef0f572e87e7188bb107fd9f9696758adfdefc8e6b112"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/api/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "1e48cb2621cd1ba3510945a8aaf66488567b36ac0d1ce9354794e2e1fcd2e1f3"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/api/__pycache__/app.cpython-311.pyc",
+    "sha256": "778633558368df812c999ad2aeeedbebe1678d9175525f6df22e22a97266c92d"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "c152337a76c7dea81a1ec8ba91b121e4890f23b81cd24dd549807f2d97c109a0"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/ddi.cpython-311.pyc",
+    "sha256": "6577c99168dcbac08f2c64e8e1b368b13bb59c6201345984cc66fe37f1acf7fc"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/duplicate.cpython-311.pyc",
+    "sha256": "db3ce2ff8fc84412eeb1460b0cce7adba16271c75f1325f4ba2d1d9b52f3a735"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/engine.cpython-311.pyc",
+    "sha256": "6b947430f531e7bc1aa9601233db51029dae726f42ab11516ce39635e2e9942b"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/ingredients.cpython-311.pyc",
+    "sha256": "9970cdee0eead336a573185e853c0cf2365e9060e2711e74f874a66e9867392d"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/checkers/__pycache__/stubs.cpython-311.pyc",
+    "sha256": "a39cd60d217337ab5f5e862513ae50506a26ca4549309f1a945115d7f64f1f95"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/core/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "9ff59c4b3f91fdf247d897ff7c931b6a8e38c18b21f9ea75628256f0bc313b52"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/core/__pycache__/ingredient_names.cpython-311.pyc",
+    "sha256": "5b71d51df03da4b99823110dd00fd37ab6eb465e0cb16c7e234583ca06cc1d1d"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/core/__pycache__/normalizer.cpython-311.pyc",
+    "sha256": "9277d16d264d6d689f856764eabcb8f3769a90684ac3e7a104a2efb9bc91295a"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/core/__pycache__/report.cpython-311.pyc",
+    "sha256": "a190688fe60c2ea0cbc239723f70b35ea94e038440f7b780c0eee5a9c1332bcf"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/explain/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "5d36ee919e5e93403c7f78c4795ce6537ab087ad085f5c0eb692e1ff75db4a69"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/explain/__pycache__/templates.cpython-311.pyc",
+    "sha256": "436f3296897de7a8dcb1c330a882d425ca4c1191486814498454b4944223fa22"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/kb/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "1fd38cdd1257af3b177da2c58ba2dd5cab9f4d81857e8078c38a232c7aa09e53"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/kb/__pycache__/graph.cpython-311.pyc",
+    "sha256": "1bce759d6c51c1ccc15d378b69736c79987c2f398359762d9f793cc3e0dab40d"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/kb/__pycache__/rules.cpython-311.pyc",
+    "sha256": "4145d8a98f7c4e9929937387921adc874109ba668f455e35d347b1d88efbc3ff"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "54ff910ebf2d27889e8f5ac8909df1842e47f642198a999773b6d2dfd02423ac"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/artifacts.cpython-311.pyc",
+    "sha256": "f7d81d8d5b7cd81c55fb501ebb7d01dff3cb41d6d6eae3a7e6f103f2feb2e37e"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/config.cpython-311.pyc",
+    "sha256": "dbfb49362352cf1d618bd751ffe4b1cc35315e99e0b3b17899afa52108a35b64"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/data.cpython-311.pyc",
+    "sha256": "5168ef42443173911cf43028023ad94d628e9496bdc6e05094d834ca5f2d09da"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/features.cpython-311.pyc",
+    "sha256": "4dfb681a2328fa744d8d5641258e5fe86fa2997b76986bb5c506f0b2833c4b24"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/predict.cpython-311.pyc",
+    "sha256": "2c922f0c21c2574885195589297a4ffb845505880e16f6af849e7adccff583b0"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/reporting.cpython-311.pyc",
+    "sha256": "671c5ad2b4e20690be6d21899075bcfc1340a1cfbee5bcbf554600e2f98e41c3"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/splits.cpython-311.pyc",
+    "sha256": "014cb09d2b3bbfd9f757f17c6e3f9c793421d4a66bdc599929d24c86f81504bd"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/ml/__pycache__/training.cpython-311.pyc",
+    "sha256": "7bb446e27f7b0cf8c622d56cbca4cb5c742255a7b31c8176ff383b8cb8f50297"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/models/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "47551807dac2cad9b7ed5a80680f9b498d8c612c6975d1fe7fda9bb6e667241c"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/models/__pycache__/domain.cpython-311.pyc",
+    "sha256": "6c719ebad1a1a931634e89d546ff71ab97e28315cfc4755e9e35a2b45d10d6b4"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/nlp/__pycache__/__init__.cpython-311.pyc",
+    "sha256": "82d60b89887c9151d0707413d9b0dcfc0c91f58a092d5661b86f71aa1e466327"
+  },
+  {
+    "path": "work/b9_repro_20260930/medsafe/nlp/__pycache__/parser.cpython-311.pyc",
+    "sha256": "c287cc2f23cc5ba049460742b2fc66a6746e1b4634aecde0ae53e90dde940f6b"
+  }
+]

@@ -1,0 +1,96 @@
+MedSafe medication safety report
+Checkers: 1 RAN, 3 PARTIAL, 1 NOT_RUN_NO_DATA. Findings by severity: MAJOR 2, MODERATE 3, UNSPECIFIED 5. Absence of findings does not mean the prescription is safe.
+2 finding(s) carry an unverified ML estimate; these are not database classifications.
+ML estimates come from a model trained on DDInter labels. They are not DDInter database classifications and have not been validated against outside sources at scale. A pharmacist must review each estimate.
+Generated at: 2026-10-01T21:02:57.375892+00:00
+Knowledge base SHA-256: 94197414b08525085da9fa15f829a9adf199cac12316d0f3bfadfbbb97add6dc
+
+Checker status:
+- DDI: PARTIAL (313 rules; 174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.)
+- DUPLICATE: RAN (2 rules; Duplicate policy loaded.)
+- ALLERGY: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review.)
+- DRUG_DISEASE: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review.)
+- DOSE: NOT_RUN_NO_DATA (0 rules; No reviewed rows in dose_limits.csv; checker not run.)
+- ML estimate: ENABLED (Local checksum-verified model loaded; estimates remain unverified. 5 pairs already have source classifications 1 pair below model threshold)
+
+Findings:
+- MAJOR: ciprofloxacin + warfarin
+  Risk: DDInter lists this pair at Major severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: ciprofloxacin + warfarin. Orders: Warfarin, Ciprofloxacin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter384)
+  Review: Not reviewed
+- MAJOR: warfarin + ibuprofen
+  Risk: DDInter lists this pair at Major severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: warfarin + ibuprofen. Orders: Combiflam, Warfarin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter900)
+  Review: Not reviewed
+- MODERATE: paracetamol + warfarin
+  Risk: DDInter lists this pair at Moderate severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: paracetamol + warfarin. Orders: Combiflam, Warfarin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter1951)
+  Review: Not reviewed
+- MODERATE: warfarin + amoxicillin
+  Risk: DDInter lists this pair at Moderate severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: warfarin + amoxicillin. Orders: Warfarin, Amoxicillin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter83)
+  Review: Not reviewed
+- MODERATE: ciprofloxacin + ibuprofen
+  Risk: DDInter lists this pair at Moderate severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: ciprofloxacin + ibuprofen. Orders: Combiflam, Ciprofloxacin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter384, DDInter900)
+  Review: Not reviewed
+- UNSPECIFIED: paracetamol + amoxicillin
+  Risk: DDInter lists this pair at Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: paracetamol + amoxicillin. Orders: Combiflam, Amoxicillin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter83)
+  Review: Not reviewed
+  ML-PREDICTED (unverified): Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.
+- UNSPECIFIED: ciprofloxacin + amoxicillin
+  Risk: DDInter lists this pair at Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: ciprofloxacin + amoxicillin. Orders: Amoxicillin, Ciprofloxacin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter384, DDInter83)
+  Review: Not reviewed
+- UNSPECIFIED: ibuprofen + amoxicillin
+  Risk: DDInter lists this pair at Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: ibuprofen + amoxicillin. Orders: Combiflam, Amoxicillin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter83, DDInter900)
+  Review: Not reviewed
+  ML-PREDICTED (unverified): Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.
+- UNSPECIFIED: Amoxicillin
+  Risk: Allergy finding has Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Label category: CONTRAINDICATION. Label contraindicates amoxicillin in patients with a history of serious hypersensitivity to amoxicillin.
+  Recommendation: Label contraindication applies to the stated serious hypersensitivity history. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.
+  Source: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641ec2a8-368a-4c5c-8c11-37366a06ce93
+  Review: Source text verified; not clinical review
+- UNSPECIFIED: Ciprofloxacin
+  Risk: Drug Disease finding has Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Label category: WARNING. Label states ciprofloxacin may exacerbate muscle weakness in myasthenia gravis and says to avoid it in patients with a known history.
+  Recommendation: Label says to avoid ciprofloxacin in patients with a known history of myasthenia gravis. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.
+  Source: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b283d662-9be1-49c7-be03-cb21055314c1
+  Review: Source text verified; not clinical review
+
+Unresolved items:
+- None.
+
+Suggested matches:
+- None.
+
+Disclaimer: Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.

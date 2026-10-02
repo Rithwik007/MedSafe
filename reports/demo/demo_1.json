@@ -1,0 +1,236 @@
+{
+  "checker_status": [
+    {
+      "checker": "DDI",
+      "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+      "rules_loaded": 313,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DUPLICATE",
+      "reason": "Duplicate policy loaded.",
+      "rules_loaded": 2,
+      "status": "RAN"
+    },
+    {
+      "checker": "ALLERGY",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DRUG_DISEASE",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DOSE",
+      "reason": "1 reviewed dose row(s) loaded. Coverage is a few source-text-checked label rows; adult single-order checks only; this is not clinical review.",
+      "rules_loaded": 1,
+      "status": "PARTIAL"
+    }
+  ],
+  "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+  "findings": [
+    {
+      "drugs_involved": [
+        "Combiflam",
+        "Warfarin"
+      ],
+      "evidence": {
+        "ddinter_ids": [
+          "DDInter1951",
+          "DDInter900"
+        ],
+        "rationale": null,
+        "review_label": "Not reviewed",
+        "review_status": "dataset_imported_not_independently_clinically_reviewed",
+        "source_name": "DDInter downloadable interaction dataset",
+        "source_url": "https://ddinter.scbdd.com/download/",
+        "version_or_access_date": "Downloaded 2026-09-30"
+      },
+      "explanation": {
+        "headline": "MAJOR: warfarin + ibuprofen",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.",
+        "review_label": "Not reviewed",
+        "risk": "DDInter lists this pair at Major severity.",
+        "rule_id": "DDINTER-DDInter1951-DDInter900",
+        "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter900)",
+        "trigger": "Ingredients: warfarin + ibuprofen. Orders: Combiflam, Warfarin.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "DDInter lists this pair at risk level Major. Ingredient pair: warfarin + ibuprofen. Orders involved: Combiflam, Warfarin.",
+      "recommendation": "Review source record and confirm appropriate management with a qualified clinician.",
+      "rule_id": "DDINTER-DDInter1951-DDInter900",
+      "severity": "MAJOR",
+      "type": "DDI"
+    },
+    {
+      "drugs_involved": [
+        "Combiflam",
+        "Dolo 650",
+        "Warfarin"
+      ],
+      "evidence": {
+        "ddinter_ids": [
+          "DDInter14",
+          "DDInter1951"
+        ],
+        "rationale": null,
+        "review_label": "Not reviewed",
+        "review_status": "dataset_imported_not_independently_clinically_reviewed",
+        "source_name": "DDInter downloadable interaction dataset (DDInter ingredient name: Acetaminophen)",
+        "source_url": "https://ddinter.scbdd.com/download/",
+        "version_or_access_date": "Downloaded 2026-09-30"
+      },
+      "explanation": {
+        "headline": "MODERATE: paracetamol + warfarin",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.",
+        "review_label": "Not reviewed",
+        "risk": "DDInter lists this pair at Moderate severity.",
+        "rule_id": "DDINTER-DDInter14-DDInter1951",
+        "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter1951)",
+        "trigger": "Ingredients: paracetamol + warfarin. Orders: Combiflam, Dolo 650, Warfarin.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "DDInter lists this pair at risk level Moderate. Ingredient pair: paracetamol + warfarin. Orders involved: Combiflam, Dolo 650, Warfarin.",
+      "recommendation": "Review source record and confirm appropriate management with a qualified clinician.",
+      "rule_id": "DDINTER-DDInter14-DDInter1951",
+      "severity": "MODERATE",
+      "type": "DDI"
+    },
+    {
+      "drugs_involved": [
+        "Combiflam",
+        "Dolo 650"
+      ],
+      "evidence": {
+        "ddinter_ids": [],
+        "rationale": "project design choice, not a clinical rule",
+        "review_label": "Not reviewed",
+        "review_status": "DESIGN_DECISION",
+        "source_name": "duplicate_policy.csv",
+        "source_url": null,
+        "version_or_access_date": null
+      },
+      "explanation": {
+        "headline": "MODERATE: Duplicate paracetamol",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",
+        "review_label": "Not reviewed",
+        "risk": "Duplicate policy flags this at Moderate severity.",
+        "rule_id": "DUPLICATE-POLICY-INGREDIENT",
+        "source": "duplicate_policy.csv",
+        "trigger": "Shared ingredient: paracetamol. Orders: Combiflam, Dolo 650.",
+        "why": "Not applicable to duplicate-therapy findings."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "paracetamol appears in Combiflam and in Dolo 650.\nOrders involved: New order 1 (Combiflam) contains paracetamol; New order 2 (Dolo 650) contains paracetamol.",
+      "recommendation": "Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",
+      "rule_id": "DUPLICATE-POLICY-INGREDIENT",
+      "severity": "MODERATE",
+      "type": "DUPLICATE"
+    },
+    {
+      "drugs_involved": [
+        "Combiflam",
+        "Dolo 650"
+      ],
+      "evidence": {
+        "ddinter_ids": [
+          "DDInter14",
+          "DDInter900"
+        ],
+        "rationale": null,
+        "review_label": "Not reviewed",
+        "review_status": "dataset_imported_not_independently_clinically_reviewed",
+        "source_name": "DDInter downloadable interaction dataset (DDInter ingredient name: Acetaminophen)",
+        "source_url": "https://ddinter.scbdd.com/download/",
+        "version_or_access_date": "Downloaded 2026-09-30"
+      },
+      "explanation": {
+        "headline": "UNSPECIFIED: paracetamol + ibuprofen",
+        "ml_note": "Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.",
+        "plain_language": null,
+        "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+        "review_label": "Not reviewed",
+        "risk": "DDInter lists this pair at Unspecified severity.",
+        "rule_id": "DDINTER-DDInter14-DDInter900",
+        "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter900)",
+        "trigger": "Ingredients: paracetamol + ibuprofen. Orders: Combiflam, Dolo 650.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": {
+        "label_status": "ML-PREDICTED, unverified",
+        "model_version": "hist_gradient_boosting-seed-20260930",
+        "predicted_label": "Minor",
+        "probability": 0.9582452895854582,
+        "reason": null,
+        "tau": 0.7054264738830898
+      },
+      "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: paracetamol + ibuprofen. Orders involved: Combiflam, Dolo 650.",
+      "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+      "rule_id": "DDINTER-DDInter14-DDInter900",
+      "severity": "UNSPECIFIED",
+      "type": "DDI"
+    }
+  ],
+  "generated_at": "2026-10-02T13:15:09.299665+00:00",
+  "kb_fingerprint": "1d7ce256014c32eac174579b965f9df5ddafdf21e4daf83512b6f82e91b40ff5",
+  "llm_status": {
+    "model": null,
+    "parse_accepted": 0,
+    "parse_attempted": 0,
+    "parse_rejected": 0,
+    "reason": "Per-request use_llm flag is off.",
+    "state": "DISABLED",
+    "summary_accepted": 0,
+    "summary_rejected": 0
+  },
+  "ml_status": {
+    "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+    "reason": "Local checksum-verified model loaded; estimates remain unverified. 2 PAIR_ALREADY_LABELED",
+    "state": "ENABLED",
+    "tau": 0.7054264738830898
+  },
+  "overall_statement": "Checkers: 1 RAN, 4 PARTIAL, 0 NOT_RUN_NO_DATA. Findings by severity: MAJOR 1, MODERATE 2, UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.",
+  "suggested_matches": [],
+  "unresolved_items": [
+    {
+      "item": "Combiflam",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Combiflam",
+      "reason": "Parser note: quantity per intake not stated"
+    },
+    {
+      "item": "Dolo 650",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Dolo 650",
+      "reason": "Parser note: quantity per intake not stated"
+    },
+    {
+      "item": "Warfarin",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Warfarin",
+      "reason": "Parser note: quantity per intake not stated"
+    }
+  ]
+}

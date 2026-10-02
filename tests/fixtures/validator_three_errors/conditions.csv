@@ -1,0 +1,2 @@
+condition_id,display_name,synonym,source_name,source_url,accessed_on,status
+TEST_CONDITION,TEST_CONDITION,TEST_CONDITION_ALIAS,TEST_SOURCE,https://example.invalid/condition,2020-01-01,TEST_ONLY

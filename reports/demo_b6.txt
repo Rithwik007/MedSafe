@@ -1,0 +1,49 @@
+MedSafe medication safety report
+Checkers: 1 RAN, 1 PARTIAL, 3 NOT_RUN_NO_DATA. Findings by severity: MAJOR 1, MODERATE 2, UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.
+Generated at: 2026-09-30T11:02:16.491130+00:00
+Knowledge base SHA-256: fd56012b64d415d6e33c5bf391ddedc41974fda21c90f8d544e7dfce7233ca40
+
+Checker status:
+- DDI: PARTIAL (313 rules; 174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.)
+- DUPLICATE: RAN (2 rules; Duplicate policy loaded.)
+- ALLERGY: NOT_RUN_NO_DATA (0 rules; No reviewed rows in allergy_rules.csv; checker not run.)
+- DRUG_DISEASE: NOT_RUN_NO_DATA (0 rules; No reviewed rows in drug_disease_rules.csv; checker not run.)
+- DOSE: NOT_RUN_NO_DATA (0 rules; No reviewed rows in dose_limits.csv; checker not run.)
+
+Findings:
+- MAJOR: warfarin + ibuprofen
+  Risk: DDInter lists this pair at Major severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: warfarin + ibuprofen. Orders: Combiflam, Warfarin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter900)
+  Review: Not reviewed
+- MODERATE: paracetamol + warfarin
+  Risk: DDInter lists this pair at Moderate severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: paracetamol + warfarin. Orders: Combiflam, Dolo 650, Warfarin.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter1951)
+  Review: Not reviewed
+- MODERATE: Duplicate paracetamol
+  Risk: Duplicate policy flags this at Moderate severity.
+  Why: Not applicable to duplicate-therapy findings.
+  Trigger: Shared ingredient: paracetamol. Orders: Combiflam, Dolo 650.
+  Recommendation: Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.
+  Source: duplicate_policy.csv
+  Review: Not reviewed
+- UNSPECIFIED: paracetamol + ibuprofen
+  Risk: DDInter lists this pair at Unspecified severity.
+  Why: Mechanism not provided by the source dataset.
+  Trigger: Ingredients: paracetamol + ibuprofen. Orders: Combiflam, Dolo 650.
+  Recommendation: No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.
+  Source: https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter900)
+  Review: Not reviewed
+
+Unresolved items:
+- None.
+
+Suggested matches:
+- None.
+
+Disclaimer: Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.

@@ -1,0 +1,130 @@
+--- README.md (before)
++++ README.md (after)
+@@ -1,40 +1,94 @@
+-Medication-safety decision-support demo. It demonstrates conservative input parsing, curated exact and fuzzy drug-name normalization, rule-engine structure, an API, and a small UI.
+-## Safety boundary
+-This is **not for clinical use**. The shipped knowledge base includes 313 unique DDInter DDI pairs for 30 whitelist drugs. The 288 raw `Unknown` severity rows map to 174 unique `UNSPECIFIED` warnings; they remain visible and require pharmacist review. Imported DDInter rows are marked `dataset_imported_not_independently_clinically_reviewed`. The source CSV has no mechanisms or recommendations, so those values stay empty. No finding does not mean a prescription is safe. Disease interactions, dose limits, and allergy cross-reactivity are not populated. Optional LLM features are off by default and guarded; see “LLM use and privacy.”
+-DDInter attribution: DDInter, Computational Biology & Drug Design Group ([download](https://ddinter.scbdd.com/download/), [terms](https://ddinter.scbdd.com/terms/)). Data is licensed CC BY-NC-SA 4.0. DDInter terms restrict use to personal, noncommercial, informational, or scholarly use; do not use commercially without permission. See [data/raw/ddinter/SOURCE.md](data/raw/ddinter/SOURCE.md) and [reports/ddinter_import.md](reports/ddinter_import.md). Imported derivative rows are shared under the same license. Drug class lookup uses the NLM RxClass API; NLM attribution: “This product uses publicly available data from the U.S. National Library of Medicine (NLM), National Institutes of Health, Department of Health and Human Services; NLM is not responsible for the product and does not endorse or recommend this or any other product.”
+-## Run
+-cd C:\Rithwik\Projects\MedSafe
+-pip install -e ".[dev,ui]"
+-Run API: `.\scripts\tasks.ps1 run-api`. Run UI in another terminal: `.\scripts\tasks.ps1 run-ui`. Run tests: `.\scripts\tasks.ps1 test`. Starlette 1.3 uses `httpx2` for its test client; this project installs `httpx2` to avoid the deprecation warning. API docs: http://127.0.0.1:8000/docs.
+-```mermaid
+-flowchart LR
+-  UI[Streamlit UI] --> API[FastAPI]
+-  API --> Parse[Conservative parser]
+-  API --> Normalize[Curated exact normalizer]
+-  Normalize --> Rules[Reviewed deterministic rule engine]
+-  Rules --> Report[Findings and unresolved items]
+-  KB[(Source-tracked rules)] --> Rules
++# MedSafe
++
++Medication-safety decision-support research prototype. It demonstrates conservative prescription parsing, source-tracked rules, and an API. **Research prototype, not for clinical use.**
++
++## What it does
++
++The project parses a narrow set of prescription directions, normalizes documented drug names, and reports findings from local rules. A local model can add explicitly unverified estimates for some DDInter-listed pairs whose source severity is unspecified. Findings retain their source evidence, and unresolved input stays visible.
++
++The rule engine loads 313 DDInter DDI rules for a whitelist of 30 drugs. These are a subset of the DDInter dataset, not its complete collection. Some source severities are unspecified; their findings require pharmacist review. Mechanisms and recommendations remain empty when the source dataset does not provide them.
++
++## Data sources and attribution
++
++DDI rules derive from DDInter, Computational Biology & Drug Design Group ([download](https://ddinter.scbdd.com/download/), [terms](https://ddinter.scbdd.com/terms/)). The source dataset is licensed CC BY-NC-SA 4.0. Review the source terms before redistribution or commercial use. See [data/raw/ddinter/SOURCE.md](data/raw/ddinter/SOURCE.md) and [reports/ddinter_import.md](reports/ddinter_import.md). Imported derivative rows retain the applicable attribution and license information.
++
++Drug-class lookup uses the NLM RxClass API. NLM attribution: “This product uses publicly available data from the U.S. National Library of Medicine (NLM), National Institutes of Health, Department of Health and Human Services; NLM is not responsible for the product and does not endorse or recommend this or any other product.”
++
++Allergy and drug-disease rows cite DailyMed labels in their source fields. No dose rows are currently loaded.
++
++## Install
++
++Requires Python 3.11 or newer.
++
++```powershell
++python -m venv .venv
++.\.venv\Scripts\Activate.ps1
++pip install -e ".[dev,ml]"
+ ```
+-Imported DDInter rules load from `data/seed/rules.csv`. Name synonyms load from `data/seed/synonyms.csv`. Exact verified mappings resolve automatically. RapidFuzz scores >=95 auto-accept; 90 to <95 return a suggestion and require confirmation; lower scores stay unresolved. Bare Crocin, Dolo, and Brufen product-family names stay unresolved. `Dolo 650` and `Crocin Advance 500mg` resolve; `Crocin 500mg` stays unresolved because that shorthand omits the verified product variant. Combination synonyms return every verified ingredient. The current analysis engine does not expand multi-ingredient results into separate DDI checks, so it marks those prescriptions unresolved rather than claiming a clear result.
+-The graph loader reads drug classes only from `data/seed/drug_classes.csv`; class rules load from `data/seed/class_rules.csv`. Exact-name ATC matches were retrieved from NLM RxClass. Three names remain `TODO_VERIFY`; no class was guessed. See `reports/drug_class_verification.json`. Graph class matching is infrastructure only; no clinical class rule is currently populated. Export MAJOR rows for manual review with `python scripts/export_review_sheet.py`; apply only complete source-backed reviews with `python scripts/apply_review.py`. No rule is marked reviewed until reviewer, date, and source are present.
+-Import DDInter data after placing its original files in `data/raw/ddinter/` with `python scripts/import_ddinter.py`. The checked-in subset is already imported from the source files and whitelist. Review status is explicit; `reviewed_by` and `verified_on` remain blank until a human performs review.
+-Current import audit is saved in `data/seed/ddinter_import_report.json` and `reports/ddinter_import.md`. It records source label counts, preserved unspecified rows, unmapped labels, duplicate conflicts, and whitelist coverage. `data/review/major_rules_review.csv` contains all 21 MAJOR rows, ready for manual source review.
+-## Current limits
+-- Small exact alias list; no RxNorm service integration or fuzzy auto-selection.
+-- Parser supports a narrow `drug dose unit frequency` format.
+-- No clinical DDI, drug-disease, cross-reactivity, or dose thresholds loaded.
+-- No PHI storage, authentication, audit service, FHIR integration, or clinical validation.
+-- No LLM. Future use must remain limited to parsing or wording and must not change findings.
+ 
+-## Data entry workflow
++## Run tests
+ 
+-Enter source-backed rows in `data/seed/` using the schemas documented in `data/seed/README_checker_csvs.md`. Leave any row out when its source or interpretation is uncertain. Run `python scripts/validate_checker_csvs.py`, then `python -m pytest -q`, then commit the reviewed CSV changes. Files under `data/review/` are worksheets only and are never loaded by checkers.
+-# LLM use and privacy
++```powershell
++python -m pytest -q
++```
+ 
+-The optional LLM features are off by default and require both `MEDSAFE_LLM_ENABLED=true`, an `ANTHROPIC_API_KEY` environment variable, and the per-request `use_llm=true` flag. Install the optional dependency with `pip install -e ".[llm]"`. The `.env.example` file contains placeholders only; `.env` is git-ignored.
++Current recorded result: 301 passed, 1 skipped. The skipped test is the opt-in live LLM test.
+ 
+-Parser fallback sends only an individual prescription line when the deterministic parser left it unparsed or marked it LOW confidence. Do not submit real patient data. The provider receives that line as prompt text. A strict JSON schema and source-substring, exact-normalizer, unit, and frequency allowlist guards reject unsupported extraction; rejected output leaves deterministic parsing in place.
++## Run the synthetic demo
+ 
+-The optional plain-language wording feature sends only the structured finding severity, headline, risk, trigger, and recommendation. It never sends the original prescription text or patient identifiers. A strict vocabulary, number, severity, drug-name, clinical-term, and reassurance-word guard rejects output that adds or changes information. Findings, severity, order, and checker counts always come from deterministic rules. LLM summaries only restate wording and are clearly labeled.
++```powershell
++python -B scripts/run_demo.py
++```
+ 
+-Demos and tests use synthetic data and fake clients only. Tests make no network calls. Provider prompts are transmitted to Anthropic when the feature is enabled; do not use real patient data.
++The script runs three synthetic prescriptions with the local ML model enabled and LLM disabled. It writes text and JSON reports under `reports/demo/` and checks repeatability, allowing only the generated timestamp to differ.
++
++## API usage
++
++Start the API from the project directory:
++
++```powershell
++python -m uvicorn medsafe.api.app:app --reload
++```
++
++Example with curl:
++
++```bash
++curl -X POST "http://127.0.0.1:8000/analyze-text?use_llm=false" \
++  -H "Content-Type: application/json" \
++  -d '{"patient":{"allergies":["amoxicillin"],"diagnoses":["myasthenia gravis"]},"prescription_text":"Amoxicillin\nCiprofloxacin"}'
++```
++
++Example with PowerShell:
++
++```powershell
++$body = @{ patient = @{ allergies = @("amoxicillin"); diagnoses = @("myasthenia gravis") }; prescription_text = "Amoxicillin`nCiprofloxacin" } | ConvertTo-Json -Depth 8
++Invoke-RestMethod -Uri "http://127.0.0.1:8000/analyze-text?use_llm=false" -Method Post -ContentType "application/json" -Body $body
++```
++
++## Architecture and data workflow
++
++The API receives structured or free-text input. The parser turns supported text into orders and keeps unresolved text in the report. The normalizer uses documented aliases; exact verified mappings resolve automatically. Fuzzy scores from 95 upward auto-accept, scores from 90 to below 95 return a suggestion for confirmation, and lower scores stay unresolved. Product-family names with ambiguous variants stay unresolved. Combination aliases preserve their documented ingredients, and unsupported multi-ingredient analysis stays unresolved.
++
++The graph loader reads classes from `data/seed/drug_classes.csv`, while class rules load from `data/seed/class_rules.csv`. Some drug-class identifiers remain marked for verification; no class is guessed. Graph class matching is infrastructure only; no clinical class rule is populated.
++
++Enter source-backed rows in `data/seed/` using the schemas in `data/seed/README_checker_csvs.md`. Leave a row out when its source or interpretation is uncertain. Run `python scripts/validate_checker_csvs.py`, then `python -m pytest -q`. Files under `data/review/` are worksheets and are not loaded by checkers.
++
++## Limitations
++
++- ML estimates are experimental and unverified. Major estimates are withheld; the user-facing message reports only a class-free withheld count.
++- Dose checker status: `NOT_RUN_NO_DATA (0 rules; No reviewed rows in dose_limits.csv; checker not run.)`
++- Disease matching uses exact phrases; allergy matching uses exact normalized ingredients.
++- Allergy, drug-disease and dose rows come from drug labels and were checked against the label text by the project owner; this is not clinical review. No dose rows are currently loaded, so source-text checking applies to the allergy and drug-disease rows only.
++- The B12 spot check covered 25 unique pairs; it is small and does not establish model performance. The frozen rule suppresses Major ML notes because 0 of 9 sampled Major pairs had a definite answer.
++- Live LLM acceptance rate is unknown; the provider test has not been run.
++- No warning does not establish that a prescription has no concern. The project has no PHI storage, authentication, audit service, FHIR integration, or clinical validation.
++
++## LLM use and privacy
++
++Optional LLM features are off by default and require `MEDSAFE_LLM_ENABLED=true`, an `ANTHROPIC_API_KEY` environment variable, and a per-request `use_llm=true` flag. Install the optional dependency with `pip install -e ".[llm]"`. The `.env.example` file contains placeholders only; `.env` is git-ignored.
++
++Parser fallback sends only an individual prescription line when deterministic parsing leaves it unparsed or LOW confidence. Do not submit real patient data. A strict JSON schema and source-substring, exact-normalizer, unit, and frequency guards reject unsupported extraction; rejected output leaves deterministic parsing in place.
++
++The optional plain-language feature sends structured finding fields only. It does not send original prescription text or patient identifiers. Guards reject output that adds information or changes severity. Findings, order, and checker counts come from deterministic rules. Demos and tests use synthetic data and fake clients; tests make no network calls. Provider prompts are transmitted when the feature is enabled.
++
++**Research prototype, not for clinical use.**

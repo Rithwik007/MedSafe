@@ -1,0 +1,25 @@
+{
+  "split": "RANDOM_PAIR",
+  "threshold": 0.7054264738830898,
+  "n": 19564,
+  "covered": 17203,
+  "coverage": 0.8793191576364752,
+  "covered_accuracy": 0.9498924606173342,
+  "per_class_precision": {
+    "Major": {
+      "precision": 0.9105978260869565,
+      "predicted_count": 3680,
+      "true_positive_count": 3351
+    },
+    "Moderate": {
+      "precision": 0.9799790102526843,
+      "predicted_count": 12387,
+      "true_positive_count": 12139
+    },
+    "Minor": {
+      "precision": 0.7491197183098591,
+      "predicted_count": 1136,
+      "true_positive_count": 851
+    }
+  }
+}

@@ -1,0 +1,31 @@
+drug,atc_code,class,source
+Warfarin,B01AA,Vitamin K antagonists,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Warfarin&relaSource=ATC
+Acetylsalicylic acid,,TODO_VERIFY,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Acetylsalicylic+acid&relaSource=ATC
+Ibuprofen,C01EB|G02CC|M01AE|M02AA|R02AX,"Other cardiac preparations|Antiinflammatory products for vaginal administration|Propionic acid derivatives|Antiinflammatory preparations, non-steroids for topical use|Other throat preparations",https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Ibuprofen&relaSource=ATC
+Metformin,A10BA,Biguanides,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Metformin&relaSource=ATC
+Lisinopril,C09AA,"ACE inhibitors, plain",https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Lisinopril&relaSource=ATC
+Amoxicillin,J01CA,Penicillins with extended spectrum,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Amoxicillin&relaSource=ATC
+Clarithromycin,J01FA,Macrolides,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Clarithromycin&relaSource=ATC
+Simvastatin,C10AA,HMG CoA reductase inhibitors,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Simvastatin&relaSource=ATC
+Sertraline,N06AB,Selective serotonin reuptake inhibitors,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Sertraline&relaSource=ATC
+Tramadol,N02AX,Other opioids,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Tramadol&relaSource=ATC
+Acetaminophen,N02BE,Anilides,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Acetaminophen&relaSource=ATC
+Furosemide,C03CA,"Sulfonamides, plain",https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Furosemide&relaSource=ATC
+Atorvastatin,C10AA,HMG CoA reductase inhibitors,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Atorvastatin&relaSource=ATC
+Clopidogrel,B01AC,Platelet aggregation inhibitors excl. heparin,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Clopidogrel&relaSource=ATC
+Digoxin,C01AA,Digitalis glycosides,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Digoxin&relaSource=ATC
+Fluconazole,D01AC|J02AC,Imidazole and triazole derivatives|Triazole and tetrazole derivatives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Fluconazole&relaSource=ATC
+Ciprofloxacin,J01MA|S01AE|S02AA|S03AA,Fluoroquinolones|Fluoroquinolones|Antiinfectives|Antiinfectives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Ciprofloxacin&relaSource=ATC
+Azithromycin,J01FA|S01AA,Macrolides|Antibiotics,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Azithromycin&relaSource=ATC
+Omeprazole,A02BC,Proton pump inhibitors,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Omeprazole&relaSource=ATC
+Pantoprazole,A02BC,Proton pump inhibitors,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Pantoprazole&relaSource=ATC
+Levothyroxine,,TODO_VERIFY,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Levothyroxine&relaSource=ATC
+Carbamazepine,N03AF,Carboxamide derivatives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Carbamazepine&relaSource=ATC
+Phenytoin,N03AB,Hydantoin derivatives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Phenytoin&relaSource=ATC
+Diazepam,N05BA,Benzodiazepine derivatives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Diazepam&relaSource=ATC
+Codeine,R05DA,Opium alkaloids and derivatives,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Codeine&relaSource=ATC
+Potassium chloride,A12BA|B05XA,Potassium|Electrolyte solutions,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Potassium+chloride&relaSource=ATC
+Spironolactone,C03DA,Aldosterone antagonists,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Spironolactone&relaSource=ATC
+Doxycycline,A01AB|J01AA,Antiinfectives and antiseptics for local oral treatment|Tetracyclines,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Doxycycline&relaSource=ATC
+Prednisolone,A01AC|A07EA|C05AA|D07AA|D07XA|H02AB|R01AD|S01BA|S01CB|S02BA|S03BA,"Corticosteroids for local oral treatment|Corticosteroids acting locally|Corticosteroids|Corticosteroids, weak (group I)|Corticosteroids, weak, other combinations|Glucocorticoids|Corticosteroids|Corticosteroids, plain|Corticosteroids/antiinfectives/mydriatics in combination|Corticosteroids|Corticosteroids",https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Prednisolone&relaSource=ATC
+Benzylpenicillin,,TODO_VERIFY,https://rxnav.nlm.nih.gov/REST/rxclass/class/byDrugName.json?drugName=Benzylpenicillin&relaSource=ATC

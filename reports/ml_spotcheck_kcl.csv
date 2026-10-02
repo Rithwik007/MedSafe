@@ -1,0 +1,6 @@
+pair,predicted_label,probability_bin,sampling_seed,source_checked,source_url,source_result,agrees,notes
+carbamazepine + potassium chloride,Major,"[tau, 0.80)",20260930,,,,,
+phenytoin + potassium chloride,Major,"[tau, 0.80)",20260930,,,,,
+azithromycin + potassium chloride,Major,"[tau, 0.80)",20260930,,,,,
+potassium chloride + tramadol,Major,"[0.80, 0.90)",20260930,,,,,
+acetaminophen + potassium chloride,Major,"[0.80, 0.90)",20260930,,,,,

@@ -1,0 +1,17 @@
+token,canonical_form,route_hint,route_is_assumed,status
+tab,tablet,oral,true,CONVENTION
+tabs,tablet,oral,true,CONVENTION
+tablet,tablet,oral,true,CONVENTION
+cap,capsule,oral,true,CONVENTION
+caps,capsule,oral,true,CONVENTION
+capsule,capsule,oral,true,CONVENTION
+syp,syrup,oral,true,CONVENTION
+syrup,syrup,oral,true,CONVENTION
+susp,suspension,oral,true,CONVENTION
+suspension,suspension,oral,true,CONVENTION
+inj,injection,,false,CONVENTION
+injection,injection,,false,CONVENTION
+oint,ointment,,false,CONVENTION
+ointment,ointment,,false,CONVENTION
+cream,cream,,false,CONVENTION
+drops,drops,,false,CONVENTION

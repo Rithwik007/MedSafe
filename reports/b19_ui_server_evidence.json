@@ -1,0 +1,634 @@
+{
+  "gets": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "bytes": 3804
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "bytes": 10757
+    },
+    {
+      "path": "/static/styles.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "bytes": 9115
+    },
+    {
+      "path": "/config",
+      "status": 200,
+      "content_type": "application/json",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "bytes": 61
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "content_type": "application/json",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "bytes": 43
+    }
+  ],
+  "examples": [
+    {
+      "example": 1,
+      "input": {
+        "patient": {},
+        "prescription_text": "Combiflam\nDolo 650\nWarfarin"
+      },
+      "status": 200,
+      "response": {
+        "findings": [
+          {
+            "type": "DDI",
+            "severity": "MAJOR",
+            "drugs_involved": [
+              "Combiflam",
+              "Warfarin"
+            ],
+            "reason": "DDInter lists this pair at risk level Major. Ingredient pair: warfarin + ibuprofen. Orders involved: Combiflam, Warfarin.",
+            "mechanism": null,
+            "recommendation": "Review source record and confirm appropriate management with a qualified clinician.",
+            "rule_id": "DDINTER-DDInter1951-DDInter900",
+            "evidence": {
+              "source_name": "DDInter downloadable interaction dataset",
+              "source_url": "https://ddinter.scbdd.com/download/",
+              "version_or_access_date": "Downloaded 2026-09-30",
+              "review_status": "dataset_imported_not_independently_clinically_reviewed",
+              "review_label": "Not reviewed",
+              "rationale": null,
+              "ddinter_ids": [
+                "DDInter1951",
+                "DDInter900"
+              ]
+            },
+            "explanation": {
+              "headline": "MAJOR: warfarin + ibuprofen",
+              "risk": "DDInter lists this pair at Major severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Ingredients: warfarin + ibuprofen. Orders: Combiflam, Warfarin.",
+              "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.",
+              "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1951, DDInter900)",
+              "review_label": "Not reviewed",
+              "rule_id": "DDINTER-DDInter1951-DDInter900",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          },
+          {
+            "type": "DDI",
+            "severity": "MODERATE",
+            "drugs_involved": [
+              "Combiflam",
+              "Dolo 650",
+              "Warfarin"
+            ],
+            "reason": "DDInter lists this pair at risk level Moderate. Ingredient pair: paracetamol + warfarin. Orders involved: Combiflam, Dolo 650, Warfarin.",
+            "mechanism": null,
+            "recommendation": "Review source record and confirm appropriate management with a qualified clinician.",
+            "rule_id": "DDINTER-DDInter14-DDInter1951",
+            "evidence": {
+              "source_name": "DDInter downloadable interaction dataset (DDInter ingredient name: Acetaminophen)",
+              "source_url": "https://ddinter.scbdd.com/download/",
+              "version_or_access_date": "Downloaded 2026-09-30",
+              "review_status": "dataset_imported_not_independently_clinically_reviewed",
+              "review_label": "Not reviewed",
+              "rationale": null,
+              "ddinter_ids": [
+                "DDInter14",
+                "DDInter1951"
+              ]
+            },
+            "explanation": {
+              "headline": "MODERATE: paracetamol + warfarin",
+              "risk": "DDInter lists this pair at Moderate severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Ingredients: paracetamol + warfarin. Orders: Combiflam, Dolo 650, Warfarin.",
+              "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label.",
+              "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter1951)",
+              "review_label": "Not reviewed",
+              "rule_id": "DDINTER-DDInter14-DDInter1951",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          },
+          {
+            "type": "DUPLICATE",
+            "severity": "MODERATE",
+            "drugs_involved": [
+              "Combiflam",
+              "Dolo 650"
+            ],
+            "reason": "paracetamol appears in Combiflam and in Dolo 650.\nOrders involved: New order 1 (Combiflam) contains paracetamol; New order 2 (Dolo 650) contains paracetamol.",
+            "mechanism": null,
+            "recommendation": "Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",
+            "rule_id": "DUPLICATE-POLICY-INGREDIENT",
+            "evidence": {
+              "source_name": "duplicate_policy.csv",
+              "source_url": null,
+              "version_or_access_date": null,
+              "review_status": "DESIGN_DECISION",
+              "review_label": "Not reviewed",
+              "rationale": "project design choice, not a clinical rule",
+              "ddinter_ids": []
+            },
+            "explanation": {
+              "headline": "MODERATE: Duplicate paracetamol",
+              "risk": "Duplicate policy flags this at Moderate severity.",
+              "why": "Not applicable to duplicate-therapy findings.",
+              "trigger": "Shared ingredient: paracetamol. Orders: Combiflam, Dolo 650.",
+              "recommendation": "Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",
+              "source": "duplicate_policy.csv",
+              "review_label": "Not reviewed",
+              "rule_id": "DUPLICATE-POLICY-INGREDIENT",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          },
+          {
+            "type": "DDI",
+            "severity": "UNSPECIFIED",
+            "drugs_involved": [
+              "Combiflam",
+              "Dolo 650"
+            ],
+            "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: paracetamol + ibuprofen. Orders involved: Combiflam, Dolo 650.",
+            "mechanism": null,
+            "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+            "rule_id": "DDINTER-DDInter14-DDInter900",
+            "evidence": {
+              "source_name": "DDInter downloadable interaction dataset (DDInter ingredient name: Acetaminophen)",
+              "source_url": "https://ddinter.scbdd.com/download/",
+              "version_or_access_date": "Downloaded 2026-09-30",
+              "review_status": "dataset_imported_not_independently_clinically_reviewed",
+              "review_label": "Not reviewed",
+              "rationale": null,
+              "ddinter_ids": [
+                "DDInter14",
+                "DDInter900"
+              ]
+            },
+            "explanation": {
+              "headline": "UNSPECIFIED: paracetamol + ibuprofen",
+              "risk": "DDInter lists this pair at Unspecified severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Ingredients: paracetamol + ibuprofen. Orders: Combiflam, Dolo 650.",
+              "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+              "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter14, DDInter900)",
+              "review_label": "Not reviewed",
+              "rule_id": "DDINTER-DDInter14-DDInter900",
+              "ml_note": "Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.",
+              "plain_language": null
+            },
+            "ml_prediction": {
+              "predicted_label": "Minor",
+              "probability": 0.9582452895854582,
+              "label_status": "ML-PREDICTED, unverified",
+              "model_version": "hist_gradient_boosting-seed-20260930",
+              "tau": 0.7054264738830898,
+              "reason": null
+            }
+          }
+        ],
+        "unresolved_items": [
+          {
+            "item": "Combiflam",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Combiflam",
+            "reason": "Parser note: quantity per intake not stated"
+          },
+          {
+            "item": "Dolo 650",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Dolo 650",
+            "reason": "Parser note: quantity per intake not stated"
+          },
+          {
+            "item": "Warfarin",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Warfarin",
+            "reason": "Parser note: quantity per intake not stated"
+          }
+        ],
+        "suggested_matches": [],
+        "checker_status": [
+          {
+            "checker": "DDI",
+            "status": "PARTIAL",
+            "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+            "rules_loaded": 313
+          },
+          {
+            "checker": "DUPLICATE",
+            "status": "RAN",
+            "reason": "Duplicate policy loaded.",
+            "rules_loaded": 2
+          },
+          {
+            "checker": "ALLERGY",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DRUG_DISEASE",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DOSE",
+            "status": "NOT_RUN_NO_DATA",
+            "reason": "No reviewed rows in dose_limits.csv; checker not run.",
+            "rules_loaded": 0
+          }
+        ],
+        "overall_statement": "Checkers: 1 RAN, 3 PARTIAL, 1 NOT_RUN_NO_DATA. Findings by severity: MAJOR 1, MODERATE 2, UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.",
+        "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+        "generated_at": "2026-10-02T12:01:26.094595+00:00",
+        "kb_fingerprint": "94197414b08525085da9fa15f829a9adf199cac12316d0f3bfadfbbb97add6dc",
+        "ml_status": {
+          "state": "ENABLED",
+          "reason": "Local checksum-verified model loaded; estimates remain unverified. 2 PAIR_ALREADY_LABELED",
+          "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+          "tau": 0.7054264738830898
+        },
+        "llm_status": {
+          "state": "DISABLED",
+          "reason": "Per-request use_llm flag is off.",
+          "model": null,
+          "parse_attempted": 0,
+          "parse_accepted": 0,
+          "parse_rejected": 0,
+          "summary_accepted": 0,
+          "summary_rejected": 0
+        }
+      }
+    },
+    {
+      "example": 2,
+      "input": {
+        "patient": {
+          "allergies": [
+            "amoxicillin"
+          ],
+          "diagnoses": [
+            "myasthenia gravis",
+            "adrenal insufficiency"
+          ]
+        },
+        "prescription_text": "Amoxicillin\nCiprofloxacin"
+      },
+      "status": 200,
+      "response": {
+        "findings": [
+          {
+            "type": "DDI",
+            "severity": "UNSPECIFIED",
+            "drugs_involved": [
+              "Amoxicillin",
+              "Ciprofloxacin"
+            ],
+            "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: ciprofloxacin + amoxicillin. Orders involved: Amoxicillin, Ciprofloxacin.",
+            "mechanism": null,
+            "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+            "rule_id": "DDINTER-DDInter384-DDInter83",
+            "evidence": {
+              "source_name": "DDInter downloadable interaction dataset",
+              "source_url": "https://ddinter.scbdd.com/download/",
+              "version_or_access_date": "Downloaded 2026-09-30",
+              "review_status": "dataset_imported_not_independently_clinically_reviewed",
+              "review_label": "Not reviewed",
+              "rationale": null,
+              "ddinter_ids": [
+                "DDInter384",
+                "DDInter83"
+              ]
+            },
+            "explanation": {
+              "headline": "UNSPECIFIED: ciprofloxacin + amoxicillin",
+              "risk": "DDInter lists this pair at Unspecified severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Ingredients: ciprofloxacin + amoxicillin. Orders: Amoxicillin, Ciprofloxacin.",
+              "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+              "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter384, DDInter83)",
+              "review_label": "Not reviewed",
+              "rule_id": "DDINTER-DDInter384-DDInter83",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          },
+          {
+            "type": "ALLERGY",
+            "severity": "UNSPECIFIED",
+            "drugs_involved": [
+              "Amoxicillin"
+            ],
+            "reason": "Label category: CONTRAINDICATION. Label contraindicates amoxicillin in patients with a history of serious hypersensitivity to amoxicillin.",
+            "mechanism": null,
+            "recommendation": "Label contraindication applies to the stated serious hypersensitivity history. Ask a pharmacist to review this label-based finding.",
+            "rule_id": "B14-ALG-001",
+            "evidence": {
+              "source_name": "DailyMed",
+              "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641ec2a8-368a-4c5c-8c11-37366a06ce93",
+              "version_or_access_date": "2026-10-02",
+              "review_status": "Source text verified; not clinical review",
+              "review_label": "Source text verified; not clinical review",
+              "rationale": "4 CONTRAINDICATIONS",
+              "ddinter_ids": []
+            },
+            "explanation": {
+              "headline": "UNSPECIFIED: Amoxicillin",
+              "risk": "Allergy finding has Unspecified severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Label category: CONTRAINDICATION. Label contraindicates amoxicillin in patients with a history of serious hypersensitivity to amoxicillin.",
+              "recommendation": "Label contraindication applies to the stated serious hypersensitivity history. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.",
+              "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641ec2a8-368a-4c5c-8c11-37366a06ce93",
+              "review_label": "Source text verified; not clinical review",
+              "rule_id": "B14-ALG-001",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          },
+          {
+            "type": "DRUG_DISEASE",
+            "severity": "UNSPECIFIED",
+            "drugs_involved": [
+              "Ciprofloxacin"
+            ],
+            "reason": "Label category: WARNING. Label states ciprofloxacin may exacerbate muscle weakness in myasthenia gravis and says to avoid it in patients with a known history.",
+            "mechanism": null,
+            "recommendation": "Label says to avoid ciprofloxacin in patients with a known history of myasthenia gravis. Ask a pharmacist to review this label-based finding.",
+            "rule_id": "B14-DIS-004",
+            "evidence": {
+              "source_name": "DailyMed",
+              "source_url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b283d662-9be1-49c7-be03-cb21055314c1",
+              "version_or_access_date": "2026-10-02",
+              "review_status": "Source text verified; not clinical review",
+              "review_label": "Source text verified; not clinical review",
+              "rationale": "5.5 Exacerbation of Myasthenia Gravis",
+              "ddinter_ids": []
+            },
+            "explanation": {
+              "headline": "UNSPECIFIED: Ciprofloxacin",
+              "risk": "Drug Disease finding has Unspecified severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Label category: WARNING. Label states ciprofloxacin may exacerbate muscle weakness in myasthenia gravis and says to avoid it in patients with a known history.",
+              "recommendation": "Label says to avoid ciprofloxacin in patients with a known history of myasthenia gravis. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.",
+              "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b283d662-9be1-49c7-be03-cb21055314c1",
+              "review_label": "Source text verified; not clinical review",
+              "rule_id": "B14-DIS-004",
+              "ml_note": null,
+              "plain_language": null
+            },
+            "ml_prediction": null
+          }
+        ],
+        "unresolved_items": [
+          {
+            "item": "adrenal insufficiency",
+            "reason": "No exact reviewed drug-condition rule matched this condition; this does not establish absence of a concern."
+          },
+          {
+            "item": "Amoxicillin",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Amoxicillin",
+            "reason": "Parser note: quantity per intake not stated"
+          },
+          {
+            "item": "Ciprofloxacin",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Ciprofloxacin",
+            "reason": "Parser note: quantity per intake not stated"
+          }
+        ],
+        "suggested_matches": [],
+        "checker_status": [
+          {
+            "checker": "DDI",
+            "status": "PARTIAL",
+            "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+            "rules_loaded": 313
+          },
+          {
+            "checker": "DUPLICATE",
+            "status": "RAN",
+            "reason": "Duplicate policy loaded.",
+            "rules_loaded": 2
+          },
+          {
+            "checker": "ALLERGY",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DRUG_DISEASE",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DOSE",
+            "status": "NOT_RUN_NO_DATA",
+            "reason": "No reviewed rows in dose_limits.csv; checker not run.",
+            "rules_loaded": 0
+          }
+        ],
+        "overall_statement": "Checkers: 1 RAN, 3 PARTIAL, 1 NOT_RUN_NO_DATA. Findings by severity: UNSPECIFIED 3. Absence of findings does not mean the prescription is safe.",
+        "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+        "generated_at": "2026-10-02T12:01:27.432892+00:00",
+        "kb_fingerprint": "94197414b08525085da9fa15f829a9adf199cac12316d0f3bfadfbbb97add6dc",
+        "ml_status": {
+          "state": "ENABLED",
+          "reason": "Local checksum-verified model loaded; estimates remain unverified. 1 BELOW_THRESHOLD",
+          "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+          "tau": 0.7054264738830898
+        },
+        "llm_status": {
+          "state": "DISABLED",
+          "reason": "Per-request use_llm flag is off.",
+          "model": null,
+          "parse_attempted": 0,
+          "parse_accepted": 0,
+          "parse_rejected": 0,
+          "summary_accepted": 0,
+          "summary_rejected": 0
+        }
+      }
+    },
+    {
+      "example": 3,
+      "input": {
+        "patient": {},
+        "prescription_text": "mystery syrup xyz 7-3-1\nLisinopril\nLevothyroxine"
+      },
+      "status": 200,
+      "response": {
+        "findings": [
+          {
+            "type": "DDI",
+            "severity": "UNSPECIFIED",
+            "drugs_involved": [
+              "Lisinopril",
+              "Levothyroxine"
+            ],
+            "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: levothyroxine + lisinopril. Orders involved: Lisinopril, Levothyroxine.",
+            "mechanism": null,
+            "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+            "rule_id": "DDINTER-DDInter1064-DDInter1079",
+            "evidence": {
+              "source_name": "DDInter downloadable interaction dataset",
+              "source_url": "https://ddinter.scbdd.com/download/",
+              "version_or_access_date": "Downloaded 2026-09-30",
+              "review_status": "dataset_imported_not_independently_clinically_reviewed",
+              "review_label": "Not reviewed",
+              "rationale": null,
+              "ddinter_ids": [
+                "DDInter1064",
+                "DDInter1079"
+              ]
+            },
+            "explanation": {
+              "headline": "UNSPECIFIED: levothyroxine + lisinopril",
+              "risk": "DDInter lists this pair at Unspecified severity.",
+              "why": "Mechanism not provided by the source dataset.",
+              "trigger": "Ingredients: levothyroxine + lisinopril. Orders: Lisinopril, Levothyroxine.",
+              "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+              "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1064, DDInter1079)",
+              "review_label": "Not reviewed",
+              "rule_id": "DDINTER-DDInter1064-DDInter1079",
+              "ml_note": "Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.",
+              "plain_language": null
+            },
+            "ml_prediction": {
+              "predicted_label": "Minor",
+              "probability": 0.9258904517706756,
+              "label_status": "ML-PREDICTED, unverified",
+              "model_version": "hist_gradient_boosting-seed-20260930",
+              "tau": 0.7054264738830898,
+              "reason": null
+            }
+          }
+        ],
+        "unresolved_items": [
+          {
+            "item": "mystery",
+            "reason": "Drug name did not resolve exactly; parsed fields retained: {\"drug_name\":\"mystery\",\"dose_value\":null,\"dose_unit\":null,\"unit_kind\":null,\"frequency_per_day\":null,\"route\":null,\"duration_days\":null,\"form\":null,\"units_per_intake\":null,\"frequency_code\":null,\"as_needed\":false,\"one_time\":false,\"route_is_assumed\":false,\"parse_confidence\":\"LOW\",\"parse_notes\":[\"Slot pattern '7-3-1' has unequal non-zero quantities; frequency unresolved.\",\"frequency not stated or unresolved\",\"quantity per intake not stated\",\"Drug name did not resolve exactly; no medication checks applied.\"],\"unparsed_tokens\":[\"syrup\",\"xyz\"],\"source_line\":\"mystery syrup xyz 7-3-1\",\"name_used\":\"mystery\",\"llm_assisted\":false}"
+          },
+          {
+            "item": "mystery syrup xyz 7-3-1",
+            "reason": "Unparsed token: syrup"
+          },
+          {
+            "item": "mystery syrup xyz 7-3-1",
+            "reason": "Unparsed token: xyz"
+          },
+          {
+            "item": "mystery syrup xyz 7-3-1",
+            "reason": "Parser note: Slot pattern '7-3-1' has unequal non-zero quantities; frequency unresolved."
+          },
+          {
+            "item": "mystery syrup xyz 7-3-1",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "mystery syrup xyz 7-3-1",
+            "reason": "Parser note: quantity per intake not stated"
+          },
+          {
+            "item": "Lisinopril",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Lisinopril",
+            "reason": "Parser note: quantity per intake not stated"
+          },
+          {
+            "item": "Levothyroxine",
+            "reason": "Parser note: frequency not stated or unresolved"
+          },
+          {
+            "item": "Levothyroxine",
+            "reason": "Parser note: quantity per intake not stated"
+          }
+        ],
+        "suggested_matches": [],
+        "checker_status": [
+          {
+            "checker": "DDI",
+            "status": "PARTIAL",
+            "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+            "rules_loaded": 313
+          },
+          {
+            "checker": "DUPLICATE",
+            "status": "RAN",
+            "reason": "Duplicate policy loaded.",
+            "rules_loaded": 2
+          },
+          {
+            "checker": "ALLERGY",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DRUG_DISEASE",
+            "status": "PARTIAL",
+            "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.",
+            "rules_loaded": 5
+          },
+          {
+            "checker": "DOSE",
+            "status": "NOT_RUN_NO_DATA",
+            "reason": "No reviewed rows in dose_limits.csv; checker not run.",
+            "rules_loaded": 0
+          }
+        ],
+        "overall_statement": "Checkers: 1 RAN, 3 PARTIAL, 1 NOT_RUN_NO_DATA. Findings by severity: UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.",
+        "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+        "generated_at": "2026-10-02T12:01:28.366335+00:00",
+        "kb_fingerprint": "94197414b08525085da9fa15f829a9adf199cac12316d0f3bfadfbbb97add6dc",
+        "ml_status": {
+          "state": "ENABLED",
+          "reason": "Local checksum-verified model loaded; estimates remain unverified.",
+          "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+          "tau": 0.7054264738830898
+        },
+        "llm_status": {
+          "state": "DISABLED",
+          "reason": "Per-request use_llm flag is off.",
+          "model": null,
+          "parse_attempted": 0,
+          "parse_accepted": 0,
+          "parse_rejected": 0,
+          "summary_accepted": 0,
+          "summary_rejected": 0
+        }
+      }
+    }
+  ]
+}

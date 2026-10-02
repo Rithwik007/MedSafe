@@ -1,0 +1,2 @@
+rule_id,drug,route,population,age_min_years,age_max_years,dose_unit,max_single_dose,max_daily_dose,per_kg_basis,renal_note,source_name,source_url,source_section,accessed_on,reviewed_by,verified_on
+TEST_RULE,TEST_DRUG,TEST_ROUTE,ADULT,18,120,mg,1,2,,,TEST_SOURCE,https://example.invalid/source,TEST_SECTION,2020-01-01,TEST_REVIEWER,2020-01-02

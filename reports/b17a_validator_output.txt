@@ -1,0 +1,9 @@
+WARNING drug_disease_rules.csv: row 2, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 3, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 4, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 5, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 6, column condition: condition not in conditions.csv
+allergy_rules.csv: 5 rows
+drug_disease_rules.csv: 5 rows
+dose_limits.csv: 0 rows
+Summary: 0 errors, 5 warnings

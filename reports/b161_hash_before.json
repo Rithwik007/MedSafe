@@ -1,0 +1,334 @@
+[
+  {
+    "path": "medsafe/__init__.py",
+    "sha256": "55a4256fc97acd32670acda0f3bf37409430f19352b0ef2ce66962ad8e1594c2"
+  },
+  {
+    "path": "medsafe/api/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/api/app.py",
+    "sha256": "f720ccae1a443ed4f1cf1a4d86d1990465b4346d465d3ff1f3d50b4b9fec91a2"
+  },
+  {
+    "path": "medsafe/checkers/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/checkers/allergy.py",
+    "sha256": "4206976379cc54517866e3af73095e7d87cde4170a66285b3eba88dd6781834c"
+  },
+  {
+    "path": "medsafe/checkers/ddi.py",
+    "sha256": "118c6a9cd0990e4eeee10c679154f6a1106c6135380dd99262698a00826ae9b6"
+  },
+  {
+    "path": "medsafe/checkers/drug_disease.py",
+    "sha256": "d4cdd4fb8d0261962ea22694dec1671ba91b8060b14a44fa0284b5e5d49b2bdd"
+  },
+  {
+    "path": "medsafe/checkers/duplicate.py",
+    "sha256": "16940fa082542d589734d27c277f36abc42bff94e91407e471f17765d88ed677"
+  },
+  {
+    "path": "medsafe/checkers/engine.py",
+    "sha256": "29ff423b4cc3b51199c157104f64c869f03aeb4f69882d8f5f6bb2c64a10b8e0"
+  },
+  {
+    "path": "medsafe/checkers/ingredients.py",
+    "sha256": "94ccc4a26fadaabaada81bdb35734a603d1b82347351e2ee0f2b22d80520d819"
+  },
+  {
+    "path": "medsafe/checkers/stubs.py",
+    "sha256": "4d3746258fd755b644def810de57b7d5fed994baa31a4a0597b050b608b71679"
+  },
+  {
+    "path": "medsafe/core/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/core/ingredient_names.py",
+    "sha256": "7310841f477c3e7e82d1869d7e64425f9c493e9c3e9531c2f7bf2603ba9696fc"
+  },
+  {
+    "path": "medsafe/core/normalizer.py",
+    "sha256": "7a246bfb701b8f1b3f75845a266d7974ef02b1018ed363991251e6e9bdafde1e"
+  },
+  {
+    "path": "medsafe/core/report.py",
+    "sha256": "582d1d9c17f2f734e02633f6e533b17eabf28b9314cfc111f253e84124b8775f"
+  },
+  {
+    "path": "medsafe/explain/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/explain/templates.py",
+    "sha256": "62099426239c79d7ce0e242a531145dfb83c22ac5913c8fd484d5cca7582b205"
+  },
+  {
+    "path": "medsafe/kb/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/kb/graph.py",
+    "sha256": "0206854192c478d79cfc15946b8afeadba7229c216dc83bb6ec4056f84ccd29f"
+  },
+  {
+    "path": "medsafe/kb/rules.py",
+    "sha256": "6a1bb5745a017232deef9426eec90be47ace6c206bdb3a727cdea6d1bf36d199"
+  },
+  {
+    "path": "medsafe/llm/client.py",
+    "sha256": "611dd5190e922a1fbbbfdbea7e7ab06efc0e909f145e066b21256306da55d6e5"
+  },
+  {
+    "path": "medsafe/llm/parser_fallback.py",
+    "sha256": "cb381143e96adff483527bede9742a4199e113b0302fe960ade20a0c62da693e"
+  },
+  {
+    "path": "medsafe/llm/service.py",
+    "sha256": "f28ca1b61ccfa6bc65d2b7abbc851674de7da105fbbdec6e64166440e03e5e3c"
+  },
+  {
+    "path": "medsafe/llm/summaries.py",
+    "sha256": "6b2d8102bc1d3ef4bef1f1f2057e80bb937831ac01259ef1df5b2a80e90fde8d"
+  },
+  {
+    "path": "medsafe/ml/__init__.py",
+    "sha256": "ba62b6c14a37b01cc0f576dbd6acb346ee4d8caed47bb344da53e2452ba400e1"
+  },
+  {
+    "path": "medsafe/ml/artifacts.py",
+    "sha256": "ec9507428f72014665df2ee65ad5566155543d0fc024a8e1dc450d2f5858b5a0"
+  },
+  {
+    "path": "medsafe/ml/config.py",
+    "sha256": "811406d03b9265db090dedbc50aa9a67198c64526aea5a2a3d3b1f5325d191e9"
+  },
+  {
+    "path": "medsafe/ml/data.py",
+    "sha256": "e8a0ae0582936c8d40f6ef4460951382d866f5ec8500efa4f3fb503ead47b557"
+  },
+  {
+    "path": "medsafe/ml/features.py",
+    "sha256": "65572f31ae6da9fc1fa95db72ec2eab6c6adc054a7fe65d55153d7ff47cd07fa"
+  },
+  {
+    "path": "medsafe/ml/predict.py",
+    "sha256": "364f61ea2bfaa8b344d68ebd92678de426f542c8988b61eef23237ce06a7180f"
+  },
+  {
+    "path": "medsafe/ml/reporting.py",
+    "sha256": "5ba71d08a554a51ea8e949714985fd991abfd58d7610639bdd95948a040f55f5"
+  },
+  {
+    "path": "medsafe/ml/splits.py",
+    "sha256": "97aa611e0fe665b847d50bdadc191ad8e7f95718f6390d743b49ad0eca7f9cf9"
+  },
+  {
+    "path": "medsafe/ml/training.py",
+    "sha256": "a59f77893eb8328cf5e07994165307dd274722edb54c085499da5d926d8fb0e1"
+  },
+  {
+    "path": "medsafe/models/__init__.py",
+    "sha256": "c0167e3f7edd99dbe582ee226c4802b43e02df520b43766893ca6667a75648af"
+  },
+  {
+    "path": "medsafe/models/domain.py",
+    "sha256": "38ac26b480040d38082997ce35ee7c350553b96a23f3d792b4c6ce86835a123e"
+  },
+  {
+    "path": "medsafe/nlp/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "medsafe/nlp/parser.py",
+    "sha256": "50d86ff55e6ac089625c3cd7bc2307dafd9bc321ed7973f19720ca5f0436813b"
+  },
+  {
+    "path": "models/drug_index.json",
+    "sha256": "1dc42194e33bc8be529ba44207b0738d94c3a524d14b2f8be504271727216e4c"
+  },
+  {
+    "path": "models/manifest.json",
+    "sha256": "7921ed98394ebace7485687d68af8b2fe197e21e06749f8e3501af8360f2416a"
+  },
+  {
+    "path": "models/severity_model.joblib",
+    "sha256": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_A.csv",
+    "sha256": "a22ca451d2b755ca2331886f7e00540c86f555f9f55704a59a19c691251f52e0"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_B.csv",
+    "sha256": "76de5115a55587f0e822e1096b684fd3ddde058fbefcbb19896df58820ace130"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_D.csv",
+    "sha256": "c0627ec39965dbe27829e4934cd20d71eb079f4e373287678737bba9423a306a"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_H.csv",
+    "sha256": "f0f925f0ba1ee68c4668d3e7a6732719b34623b22a0f5d017f9090e59f63c88e"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_L.csv",
+    "sha256": "f54f4486cc00344f8c86508c31c2ca3fad6d1d37ec3af5bcf609b4bbda5507ef"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_P.csv",
+    "sha256": "83f8c0edb20d09ef29b8500b48f9623e208379525688ade9e70a7df2d8749d55"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_R.csv",
+    "sha256": "1c39c3d4a6e41659b7a988538d7f363867592abc6f41a815de8746f6e2150574"
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_V.csv",
+    "sha256": "353973fb300453946aea95733e8fb52338e4b59426d2ce6ca318363d4f84f10a"
+  },
+  {
+    "path": "data/review/checker_rows_template.csv",
+    "sha256": "04a9681c62d02068b3f26cc73fee3b324695803131b860e1901057439861013a"
+  },
+  {
+    "path": "data/review/major_rules_review.csv",
+    "sha256": "cf064e44a14916ab0ccfdc79bcc6d2de5b84b63b8e48a63cf34821ef5d44fd17"
+  },
+  {
+    "path": "data/seed/allergy_rules.csv",
+    "sha256": "c9ba71cfb3e6c43692b53b241b7a213c74be3c9bdd54bd10cfc52d7ebb022f2b"
+  },
+  {
+    "path": "data/seed/class_rules.csv",
+    "sha256": "a17c01e9e8e08cf01f90cb28746a86c29c4aac96fbfa552ba323ff97962e09d2"
+  },
+  {
+    "path": "data/seed/conditions.csv",
+    "sha256": "1aeaa8a92360b50ac3e52aaee4b0fe238ca156d22f2bb7cd541e99b20ad41910"
+  },
+  {
+    "path": "data/seed/ddinter_import_report.json",
+    "sha256": "d2168cd27eb34529a8b65fe0f207b932d16051272b738aedcc43fd8f413f5a33"
+  },
+  {
+    "path": "data/seed/ddinter_spotcheck_report.json",
+    "sha256": "98c972a787a818225f4b1873ce02798a0522e55423b9bf0ad5fe8990a63cb411"
+  },
+  {
+    "path": "data/seed/dosage_forms.csv",
+    "sha256": "50bbcfb288d61d92070cc4c68f6e015a737c0ae8297bb1532faca59d97ebd007"
+  },
+  {
+    "path": "data/seed/dose_limits.csv",
+    "sha256": "e5c7baef6da2f1d41b5b06b83d603ccebbb5b956432f9fd3deac821ef49bc595"
+  },
+  {
+    "path": "data/seed/drug_classes.csv",
+    "sha256": "cbb8b4c12576d43c7bb019dc2fd595178750ab460c7e7ccfe850d4ed2e8625e1"
+  },
+  {
+    "path": "data/seed/drug_disease_rules.csv",
+    "sha256": "57639b57c4a41543fa70b78171cba086d32125f9db7937ceb38cab6f614532ca"
+  },
+  {
+    "path": "data/seed/drug_whitelist.csv",
+    "sha256": "be50151532f9ea3b9f2a38e077d93ae9ec77380e87b4ed6342adefad31031f85"
+  },
+  {
+    "path": "data/seed/duplicate_policy.csv",
+    "sha256": "ed9dc3417b62f123276ad9d33854d542831a3a8d5e2b6f229b6aa46e6d66c852"
+  },
+  {
+    "path": "data/seed/frequency_map.csv",
+    "sha256": "61ce368438b0d3e97f4b0b3ea3b9067960b6d9d2e88f1ef5e4b7db456fd247f5"
+  },
+  {
+    "path": "data/seed/frequency_phrases.csv",
+    "sha256": "559519cf00552d8807a1f7cff37784fa699ffeb079f6364db1acad40ae07d675"
+  },
+  {
+    "path": "data/seed/ingredient_names.csv",
+    "sha256": "9d97896294e83090d666bfdcc3d25b8901973eb8d6ecf6aaa8395774f30de38c"
+  },
+  {
+    "path": "data/seed/plain_language_allowlist.csv",
+    "sha256": "7b4e2c64d18ca1538d1862555278753d19b2aaa5bf943ac5ce3f769aa537c885"
+  },
+  {
+    "path": "data/seed/rules.csv",
+    "sha256": "6813cca77165952219b1753ecd5a2f235c42787e9309fd945849eba2f9b0ed70"
+  },
+  {
+    "path": "data/seed/severity_policy.csv",
+    "sha256": "88e4754781bad4c5308a07fe071b9bfd53d98f5814160b9256e5a317e06672fb"
+  },
+  {
+    "path": "data/seed/synonyms.csv",
+    "sha256": "2cbcb16404132be2e6aaaf19d629b5f5e3c1af3ac8cfa3194f4066592d73924a"
+  },
+  {
+    "path": "data/seed/units.csv",
+    "sha256": "8c8a4e521d02ef23709971b8816e7274a1ab4a9454a7a5562c9da57e0c19de1f"
+  },
+  {
+    "path": "scripts/apply_review.py",
+    "sha256": "6f6fffdc6e40853e9f60d7cb17a7726c09a924cda3018e7fac3732f0f2e22221"
+  },
+  {
+    "path": "scripts/audit_ddinter_import.py",
+    "sha256": "b5b9636363181edc150e0682689683f0ea450fe489d27ab792fb62a517be722c"
+  },
+  {
+    "path": "scripts/check_eval_tables.py",
+    "sha256": "0eabaa25c465add0ff0f093d95141e722532e1fd5a1acc9451919c75e58e9a28"
+  },
+  {
+    "path": "scripts/export_ml_spotcheck.py",
+    "sha256": "c4046ea1777414780b2d02dd6165fca04c17356e3cd0b9a9fa0d1e8e0cf5e331"
+  },
+  {
+    "path": "scripts/export_ml_spotcheck_b10_2.py",
+    "sha256": "c1f350de88ef123dc93df9d4413c743a5ae1f311b3c4b502e1aa788ee6babfa6"
+  },
+  {
+    "path": "scripts/export_review_sheet.py",
+    "sha256": "15875186495b5df0aafad1defe29983e95fc9883b3425f279b6144604eed1ac3"
+  },
+  {
+    "path": "scripts/import_ddinter.py",
+    "sha256": "699b5f760b8d5ccad16e83bc5ee6247756a516f7bb47c268c7c6e9ad61195c7a"
+  },
+  {
+    "path": "scripts/ml_unknown_distribution.py",
+    "sha256": "7489fde49deac510b066a510d2f6be5b1d4284b9514ae55e0bc55ec982d1f3da"
+  },
+  {
+    "path": "scripts/promote_staged_rows.py",
+    "sha256": "b0b4689c1d9ae07870696099c7aa0de4291734c2a0c5f948101167d6d9b26978"
+  },
+  {
+    "path": "scripts/run_demo.py",
+    "sha256": "f5d9b91086ba7521edd9e986816bd9f393848f23026390811272c52697946192"
+  },
+  {
+    "path": "scripts/run_ml_ablation_b10_2.py",
+    "sha256": "90779b752f4f4e7628eda07a9f130de02978b2aa678cea9d36d6932660dac245"
+  },
+  {
+    "path": "scripts/tally_spotcheck.py",
+    "sha256": "db4c868130ec76932b2b2ec478c3c8443a409e91e908f9ab5f3673ded49549e2"
+  },
+  {
+    "path": "scripts/train_severity_model.py",
+    "sha256": "c200d89937285f8a47629892f7ee42c54bb09d5dfd6c2f0d82e2e2a2106574b8"
+  },
+  {
+    "path": "scripts/validate_checker_csvs.py",
+    "sha256": "59ff348aa6186048f832598d61e36b90f9eecc5a2b280fab90da002899fdaf77"
+  }
+]

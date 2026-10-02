@@ -1,0 +1,6 @@
+DDInterID_A,Drug_A,DDInterID_B,Drug_B,Level
+ID_A,DRUG_A,ID_B,DRUG_B,Minor
+ID_B,DRUG_B,ID_A,DRUG_A,Major
+ID_A,DRUG_A,ID_C,DRUG_C,Unknown
+ID_D,DRUG_D,ID_E,DRUG_E,Moderate
+ID_F,DRUG_F,ID_G,DRUG_G,Minor

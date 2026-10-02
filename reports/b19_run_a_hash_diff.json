@@ -1,0 +1,61 @@
+{
+  "before_file_count": 86,
+  "after_file_count": 91,
+  "changed_files": [
+    {
+      "path": "medsafe/api/app.py",
+      "before": "f720ccae1a443ed4f1cf1a4d86d1990465b4346d465d3ff1f3d50b4b9fec91a2",
+      "after": "011e1023a333a23508cd3d157fccc7fe9f12f9b064069855dfd8e79e11cfe03b"
+    },
+    {
+      "path": "medsafe/api/static/app.js",
+      "before": null,
+      "after": "65747c467b291b9f32b36d81c7b7e1975cf695cb2f453277f2c358c2a2405eea"
+    },
+    {
+      "path": "medsafe/api/static/index.html",
+      "before": null,
+      "after": "6e4930342760c286b5ac894436b34b9ed35762baeb3a677bf89e883344a4a272"
+    },
+    {
+      "path": "medsafe/api/static/styles.css",
+      "before": null,
+      "after": "1ae0dc7db1f850f8b24f88336b64d6b5140484767fe3a4486a52a1659eb9cebd"
+    },
+    {
+      "path": "medsafe/llm/client.py",
+      "before": "611dd5190e922a1fbbbfdbea7e7ab06efc0e909f145e066b21256306da55d6e5",
+      "after": "f3eeba23277f6319ea7d198fcb4bfcedfd8ac8af378fa007e72b2071da1028a1"
+    },
+    {
+      "path": "medsafe/llm/parser_fallback.py",
+      "before": "cb381143e96adff483527bede9742a4199e113b0302fe960ade20a0c62da693e",
+      "after": "e591336536d2a139af42daf306486fd9879b6d3118492a38f9df353776a8e254"
+    },
+    {
+      "path": "medsafe/llm/service.py",
+      "before": "f28ca1b61ccfa6bc65d2b7abbc851674de7da105fbbdec6e64166440e03e5e3c",
+      "after": "c06cdca3124e4066586a5ea46a61d0ee593ddb3b96c163cef9bd3c5ae92f8148"
+    },
+    {
+      "path": "medsafe/models/domain.py",
+      "before": "38ac26b480040d38082997ce35ee7c350553b96a23f3d792b4c6ce86835a123e",
+      "after": "871f546b9df6cbc4324701d56648e129c74e6c7484468177773f2ca4145e96c7"
+    },
+    {
+      "path": "scripts/make_submission_zip.py",
+      "before": null,
+      "after": "d3886143d1761fccf6c91b6a0e01dbba7ff9fb996f47fd4d01157d08d701dc0f"
+    },
+    {
+      "path": "scripts/measure_llm_acceptance.py",
+      "before": null,
+      "after": "6185adb07638fd99903c20843d57c6bbdb0548083991d8128e4e5363fc4e941a"
+    }
+  ],
+  "model_artifacts": {
+    "models/severity_model.joblib": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+    "models/drug_index.json": "1dc42194e33bc8be529ba44207b0738d94c3a524d14b2f8be504271727216e4c",
+    "models/manifest.json": "7921ed98394ebace7485687d68af8b2fe197e21e06749f8e3501af8360f2416a"
+  }
+}

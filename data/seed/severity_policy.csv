@@ -1,0 +1,4 @@
+label_category,severity,status,note
+CONTRAINDICATION,CONTRAINDICATED,DESIGN_DECISION,project mapping not clinical grading
+WARNING,MAJOR,DESIGN_DECISION,project mapping not clinical grading
+PRECAUTION,MODERATE,DESIGN_DECISION,project mapping not clinical grading

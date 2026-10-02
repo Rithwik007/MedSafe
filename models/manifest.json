@@ -1,0 +1,42 @@
+{
+  "files": {
+    "drug_index.json": {
+      "sha256": "1dc42194e33bc8be529ba44207b0738d94c3a524d14b2f8be504271727216e4c"
+    },
+    "severity_model.joblib": {
+      "sha256": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c"
+    }
+  },
+  "gate": {
+    "cold_drug_affects_gate": false,
+    "criterion": "RANDOM_PAIR test macro-F1 >= best baseline + fixed margin AND Major recall >= fixed minimum",
+    "enabled": true,
+    "fixed_thresholds": {
+      "macro_f1_margin": 0.05,
+      "major_recall_min": 0.5
+    },
+    "random_pair_test": {
+      "best_baseline_macro_f1": 0.5056800182019963,
+      "macro_f1_condition_passed": true,
+      "major_recall": 0.904879861283131,
+      "major_recall_condition_passed": true,
+      "model_macro_f1": 0.8445752891618956,
+      "model_name": "hist_gradient_boosting"
+    }
+  },
+  "listed_pair_count": 160235,
+  "model_name": "hist_gradient_boosting",
+  "raw_source_fingerprint": "082e38e840402c1ac643a7345a7d3210bb59a87710e982e2f00fa61419c747d6",
+  "seed": 20260930,
+  "tau": 0.7054264738830898,
+  "training_data_fingerprint": "039b2a42ac624b169df1ae26545c037d612720be7531e82cbfbef9569879c056",
+  "training_split": "RANDOM_PAIR train only",
+  "unlabeled_pair_count": 29813,
+  "versions": {
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  }
+}

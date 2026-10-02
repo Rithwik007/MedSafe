@@ -1,0 +1,8 @@
+token,canonical_unit,kind,status
+mg,mg,MASS,CONVENTION
+g,g,MASS,CONVENTION
+mcg,mcg,MASS,CONVENTION
+ug,mcg,MASS,CONVENTION
+µg,mcg,MASS,CONVENTION
+ml,ml,VOLUME,CONVENTION
+iu,iu,IU,CONVENTION

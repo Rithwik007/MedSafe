@@ -1,0 +1,2 @@
+deterministic_across_3_runs_except_generated_at=True
+match_B16_snapshot_except_generated_at=True

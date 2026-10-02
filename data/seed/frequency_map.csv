@@ -1,0 +1,15 @@
+code,times_per_day,as_needed,one_time,note,status
+OD,1,False,False,,CONVENTION
+BD,2,False,False,,CONVENTION
+BID,2,False,False,,CONVENTION
+TDS,3,False,False,,CONVENTION
+TID,3,False,False,,CONVENTION
+QID,4,False,False,,CONVENTION
+HS,1,False,False,at bedtime,CONVENTION
+Q4H,6,False,False,,CONVENTION
+Q6H,4,False,False,,CONVENTION
+Q8H,3,False,False,,CONVENTION
+Q12H,2,False,False,,CONVENTION
+SOS,,True,False,,CONVENTION
+PRN,,True,False,,CONVENTION
+STAT,1,False,True,,CONVENTION

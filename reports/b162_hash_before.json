@@ -1,0 +1,1172 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "61aac731680810ebfc2829443a12000dd88b4e16bd8ee86b7b39865e03774c86",
+    "size": 212
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "6cdccec3e27dca5d599d174e85171ee65839e09cf312f5ce4fbb794d610f21ad",
+    "size": 5761
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_A.csv",
+    "sha256": "a22ca451d2b755ca2331886f7e00540c86f555f9f55704a59a19c691251f52e0",
+    "size": 3343434
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_B.csv",
+    "sha256": "76de5115a55587f0e822e1096b684fd3ddde058fbefcbb19896df58820ace130",
+    "size": 867726
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_D.csv",
+    "sha256": "c0627ec39965dbe27829e4934cd20d71eb079f4e373287678737bba9423a306a",
+    "size": 1520704
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_H.csv",
+    "sha256": "f0f925f0ba1ee68c4668d3e7a6732719b34623b22a0f5d017f9090e59f63c88e",
+    "size": 705088
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_L.csv",
+    "sha256": "f54f4486cc00344f8c86508c31c2ca3fad6d1d37ec3af5bcf609b4bbda5507ef",
+    "size": 3885702
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_P.csv",
+    "sha256": "83f8c0edb20d09ef29b8500b48f9623e208379525688ade9e70a7df2d8749d55",
+    "size": 317460
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_R.csv",
+    "sha256": "1c39c3d4a6e41659b7a988538d7f363867592abc6f41a815de8746f6e2150574",
+    "size": 1793766
+  },
+  {
+    "path": "data/raw/ddinter/ddinter_downloads_code_V.csv",
+    "sha256": "353973fb300453946aea95733e8fb52338e4b59426d2ce6ca318363d4f84f10a",
+    "size": 700777
+  },
+  {
+    "path": "data/raw/ddinter/SOURCE.md",
+    "sha256": "440f4f33ea316ba0cd6f6beb167bfb4f6a844754b42e202d6ed79673961aacc7",
+    "size": 883
+  },
+  {
+    "path": "data/review/checker_rows_template.csv",
+    "sha256": "04a9681c62d02068b3f26cc73fee3b324695803131b860e1901057439861013a",
+    "size": 564
+  },
+  {
+    "path": "data/review/major_rules_review.csv",
+    "sha256": "cf064e44a14916ab0ccfdc79bcc6d2de5b84b63b8e48a63cf34821ef5d44fd17",
+    "size": 2104
+  },
+  {
+    "path": "data/seed/allergy_rules.csv",
+    "sha256": "c9ba71cfb3e6c43692b53b241b7a213c74be3c9bdd54bd10cfc52d7ebb022f2b",
+    "size": 2064
+  },
+  {
+    "path": "data/seed/class_rules.csv",
+    "sha256": "a17c01e9e8e08cf01f90cb28746a86c29c4aac96fbfa552ba323ff97962e09d2",
+    "size": 51
+  },
+  {
+    "path": "data/seed/conditions.csv",
+    "sha256": "1aeaa8a92360b50ac3e52aaee4b0fe238ca156d22f2bb7cd541e99b20ad41910",
+    "size": 77
+  },
+  {
+    "path": "data/seed/ddinter_import_report.json",
+    "sha256": "d2168cd27eb34529a8b65fe0f207b932d16051272b738aedcc43fd8f413f5a33",
+    "size": 1772
+  },
+  {
+    "path": "data/seed/ddinter_spotcheck_report.json",
+    "sha256": "98c972a787a818225f4b1873ce02798a0522e55423b9bf0ad5fe8990a63cb411",
+    "size": 1784
+  },
+  {
+    "path": "data/seed/dosage_forms.csv",
+    "sha256": "50bbcfb288d61d92070cc4c68f6e015a737c0ae8297bb1532faca59d97ebd007",
+    "size": 619
+  },
+  {
+    "path": "data/seed/dose_limits.csv",
+    "sha256": "e5c7baef6da2f1d41b5b06b83d603ccebbb5b956432f9fd3deac821ef49bc595",
+    "size": 198
+  },
+  {
+    "path": "data/seed/drug_classes.csv",
+    "sha256": "cbb8b4c12576d43c7bb019dc2fd595178750ab460c7e7ccfe850d4ed2e8625e1",
+    "size": 4929
+  },
+  {
+    "path": "data/seed/drug_disease_rules.csv",
+    "sha256": "57639b57c4a41543fa70b78171cba086d32125f9db7937ceb38cab6f614532ca",
+    "size": 2334
+  },
+  {
+    "path": "data/seed/drug_whitelist.csv",
+    "sha256": "be50151532f9ea3b9f2a38e077d93ae9ec77380e87b4ed6342adefad31031f85",
+    "size": 402
+  },
+  {
+    "path": "data/seed/duplicate_policy.csv",
+    "sha256": "ed9dc3417b62f123276ad9d33854d542831a3a8d5e2b6f229b6aa46e6d66c852",
+    "size": 651
+  },
+  {
+    "path": "data/seed/frequency_map.csv",
+    "sha256": "61ce368438b0d3e97f4b0b3ea3b9067960b6d9d2e88f1ef5e4b7db456fd247f5",
+    "size": 489
+  },
+  {
+    "path": "data/seed/frequency_phrases.csv",
+    "sha256": "559519cf00552d8807a1f7cff37784fa699ffeb079f6364db1acad40ae07d675",
+    "size": 272
+  },
+  {
+    "path": "data/seed/ingredient_names.csv",
+    "sha256": "9d97896294e83090d666bfdcc3d25b8901973eb8d6ecf6aaa8395774f30de38c",
+    "size": 1182
+  },
+  {
+    "path": "data/seed/plain_language_allowlist.csv",
+    "sha256": "7b4e2c64d18ca1538d1862555278753d19b2aaa5bf943ac5ce3f769aa537c885",
+    "size": 967
+  },
+  {
+    "path": "data/seed/README_checker_csvs.md",
+    "sha256": "9cf25c4f341565a2088d2510f0750617e41dd1fb8ba9d25144425e5ff1f8abf0",
+    "size": 1084
+  },
+  {
+    "path": "data/seed/rules.csv",
+    "sha256": "6813cca77165952219b1753ecd5a2f235c42787e9309fd945849eba2f9b0ed70",
+    "size": 99412
+  },
+  {
+    "path": "data/seed/severity_policy.csv",
+    "sha256": "88e4754781bad4c5308a07fe071b9bfd53d98f5814160b9256e5a317e06672fb",
+    "size": 263
+  },
+  {
+    "path": "data/seed/synonyms.csv",
+    "sha256": "2cbcb16404132be2e6aaaf19d629b5f5e3c1af3ac8cfa3194f4066592d73924a",
+    "size": 2708
+  },
+  {
+    "path": "data/seed/units.csv",
+    "sha256": "8c8a4e521d02ef23709971b8816e7274a1ab4a9454a7a5562c9da57e0c19de1f",
+    "size": 190
+  },
+  {
+    "path": "medsafe/__init__.py",
+    "sha256": "55a4256fc97acd32670acda0f3bf37409430f19352b0ef2ce66962ad8e1594c2",
+    "size": 38
+  },
+  {
+    "path": "medsafe/api/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/api/app.py",
+    "sha256": "f720ccae1a443ed4f1cf1a4d86d1990465b4346d465d3ff1f3d50b4b9fec91a2",
+    "size": 3673
+  },
+  {
+    "path": "medsafe/checkers/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/checkers/allergy.py",
+    "sha256": "4206976379cc54517866e3af73095e7d87cde4170a66285b3eba88dd6781834c",
+    "size": 4075
+  },
+  {
+    "path": "medsafe/checkers/ddi.py",
+    "sha256": "118c6a9cd0990e4eeee10c679154f6a1106c6135380dd99262698a00826ae9b6",
+    "size": 3650
+  },
+  {
+    "path": "medsafe/checkers/drug_disease.py",
+    "sha256": "d4cdd4fb8d0261962ea22694dec1671ba91b8060b14a44fa0284b5e5d49b2bdd",
+    "size": 4144
+  },
+  {
+    "path": "medsafe/checkers/duplicate.py",
+    "sha256": "16940fa082542d589734d27c277f36abc42bff94e91407e471f17765d88ed677",
+    "size": 5285
+  },
+  {
+    "path": "medsafe/checkers/engine.py",
+    "sha256": "29ff423b4cc3b51199c157104f64c869f03aeb4f69882d8f5f6bb2c64a10b8e0",
+    "size": 14536
+  },
+  {
+    "path": "medsafe/checkers/ingredients.py",
+    "sha256": "94ccc4a26fadaabaada81bdb35734a603d1b82347351e2ee0f2b22d80520d819",
+    "size": 2192
+  },
+  {
+    "path": "medsafe/checkers/stubs.py",
+    "sha256": "4d3746258fd755b644def810de57b7d5fed994baa31a4a0597b050b608b71679",
+    "size": 2170
+  },
+  {
+    "path": "medsafe/core/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/core/ingredient_names.py",
+    "sha256": "7310841f477c3e7e82d1869d7e64425f9c493e9c3e9531c2f7bf2603ba9696fc",
+    "size": 499
+  },
+  {
+    "path": "medsafe/core/normalizer.py",
+    "sha256": "7a246bfb701b8f1b3f75845a266d7974ef02b1018ed363991251e6e9bdafde1e",
+    "size": 4483
+  },
+  {
+    "path": "medsafe/core/report.py",
+    "sha256": "582d1d9c17f2f734e02633f6e533b17eabf28b9314cfc111f253e84124b8775f",
+    "size": 1686
+  },
+  {
+    "path": "medsafe/explain/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/explain/templates.py",
+    "sha256": "62099426239c79d7ce0e242a531145dfb83c22ac5913c8fd484d5cca7582b205",
+    "size": 8442
+  },
+  {
+    "path": "medsafe/kb/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/kb/graph.py",
+    "sha256": "0206854192c478d79cfc15946b8afeadba7229c216dc83bb6ec4056f84ccd29f",
+    "size": 5836
+  },
+  {
+    "path": "medsafe/kb/rules.py",
+    "sha256": "6a1bb5745a017232deef9426eec90be47ace6c206bdb3a727cdea6d1bf36d199",
+    "size": 2456
+  },
+  {
+    "path": "medsafe/llm/client.py",
+    "sha256": "611dd5190e922a1fbbbfdbea7e7ab06efc0e909f145e066b21256306da55d6e5",
+    "size": 1696
+  },
+  {
+    "path": "medsafe/llm/parser_fallback.py",
+    "sha256": "cb381143e96adff483527bede9742a4199e113b0302fe960ade20a0c62da693e",
+    "size": 6567
+  },
+  {
+    "path": "medsafe/llm/service.py",
+    "sha256": "f28ca1b61ccfa6bc65d2b7abbc851674de7da105fbbdec6e64166440e03e5e3c",
+    "size": 3037
+  },
+  {
+    "path": "medsafe/llm/summaries.py",
+    "sha256": "6b2d8102bc1d3ef4bef1f1f2057e80bb937831ac01259ef1df5b2a80e90fde8d",
+    "size": 4002
+  },
+  {
+    "path": "medsafe/ml/__init__.py",
+    "sha256": "ba62b6c14a37b01cc0f576dbd6acb346ee4d8caed47bb344da53e2452ba400e1",
+    "size": 81
+  },
+  {
+    "path": "medsafe/ml/artifacts.py",
+    "sha256": "ec9507428f72014665df2ee65ad5566155543d0fc024a8e1dc450d2f5858b5a0",
+    "size": 2417
+  },
+  {
+    "path": "medsafe/ml/config.py",
+    "sha256": "811406d03b9265db090dedbc50aa9a67198c64526aea5a2a3d3b1f5325d191e9",
+    "size": 349
+  },
+  {
+    "path": "medsafe/ml/data.py",
+    "sha256": "e8a0ae0582936c8d40f6ef4460951382d866f5ec8500efa4f3fb503ead47b557",
+    "size": 6968
+  },
+  {
+    "path": "medsafe/ml/features.py",
+    "sha256": "65572f31ae6da9fc1fa95db72ec2eab6c6adc054a7fe65d55153d7ff47cd07fa",
+    "size": 3273
+  },
+  {
+    "path": "medsafe/ml/predict.py",
+    "sha256": "364f61ea2bfaa8b344d68ebd92678de426f542c8988b61eef23237ce06a7180f",
+    "size": 3437
+  },
+  {
+    "path": "medsafe/ml/reporting.py",
+    "sha256": "5ba71d08a554a51ea8e949714985fd991abfd58d7610639bdd95948a040f55f5",
+    "size": 10013
+  },
+  {
+    "path": "medsafe/ml/splits.py",
+    "sha256": "97aa611e0fe665b847d50bdadc191ad8e7f95718f6390d743b49ad0eca7f9cf9",
+    "size": 4152
+  },
+  {
+    "path": "medsafe/ml/training.py",
+    "sha256": "a59f77893eb8328cf5e07994165307dd274722edb54c085499da5d926d8fb0e1",
+    "size": 9054
+  },
+  {
+    "path": "medsafe/models/__init__.py",
+    "sha256": "c0167e3f7edd99dbe582ee226c4802b43e02df520b43766893ca6667a75648af",
+    "size": 31
+  },
+  {
+    "path": "medsafe/models/domain.py",
+    "sha256": "38ac26b480040d38082997ce35ee7c350553b96a23f3d792b4c6ce86835a123e",
+    "size": 3642
+  },
+  {
+    "path": "medsafe/nlp/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "path": "medsafe/nlp/parser.py",
+    "sha256": "50d86ff55e6ac089625c3cd7bc2307dafd9bc321ed7973f19720ca5f0436813b",
+    "size": 20710
+  },
+  {
+    "path": "models/drug_index.json",
+    "sha256": "1dc42194e33bc8be529ba44207b0738d94c3a524d14b2f8be504271727216e4c",
+    "size": 6871078
+  },
+  {
+    "path": "models/manifest.json",
+    "sha256": "7921ed98394ebace7485687d68af8b2fe197e21e06749f8e3501af8360f2416a",
+    "size": 1416
+  },
+  {
+    "path": "models/severity_model.joblib",
+    "sha256": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+    "size": 642513
+  },
+  {
+    "path": "NOTICE",
+    "sha256": "26e230bc7875f555277bc0fbbaaffe373d91a8a422a200e6704d7b934f8141fa",
+    "size": 1270
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "93a58444bd8db424c1a8ed98e1adf2cfb66411319c0b9417cf75322e3c3cdde8",
+    "size": 679
+  },
+  {
+    "path": "README.md",
+    "sha256": "17c6605ba390716f2114fc66dce3fd335cd48d2fd85382e6692354ca1e42e644",
+    "size": 7261
+  },
+  {
+    "path": "reports/b10_2_ablation.md",
+    "sha256": "4de00ad6bf95a13776718b3bb439b91eef4c22faddf6da2d87b5c6757c3285ef",
+    "size": 2386
+  },
+  {
+    "path": "reports/b10_2_sampler_diagnosis.md",
+    "sha256": "bfa4ad26dc355496afcbd7bf5c26b008bd608e281f410faeb21b16c2fd21f3b1",
+    "size": 1899
+  },
+  {
+    "path": "reports/b10_3_ablation_complete.md",
+    "sha256": "7517203e85573ddb04d06d4c442d27b53682b939ef9ac2fba2698f032198d102",
+    "size": 6274
+  },
+  {
+    "path": "reports/b10_3_exposure.md",
+    "sha256": "16103546ffa4325daf8b8ec2b4942ca76acd23957156d416fad15f680bd72d14",
+    "size": 1390
+  },
+  {
+    "path": "reports/b10_demo_fake_summary.txt",
+    "sha256": "07d54e748bac7e6158c83a1ba24914329fc07618f7b468d4893f2767b35a8394",
+    "size": 3743
+  },
+  {
+    "path": "reports/b10_demo_guard_fallback.txt",
+    "sha256": "b6fcc58808ba7fb81d5b4ed4b9da581d4083dcea35c75060c0feba14362bceb6",
+    "size": 3471
+  },
+  {
+    "path": "reports/b10_demo_llm_status.json",
+    "sha256": "14f6705baead282c2969380ff375dbac6555433dc22583ae73fcadb84aed739c",
+    "size": 789
+  },
+  {
+    "path": "reports/b10_demo_ml_on_llm_off.txt",
+    "sha256": "78cf2d9fc42d8f842b35e7b36f7631844d59c54c2eb64122b47540961e0c51b0",
+    "size": 3384
+  },
+  {
+    "path": "reports/b10_parser_fallback_cases.json",
+    "sha256": "2525342bf2c6aac6618c703bc1b6ae00fd940e6fac5b5d3c8daa5d59b035b0da",
+    "size": 1913
+  },
+  {
+    "path": "reports/b11_spotcheck_tally.md",
+    "sha256": "ea9dd9c6d2dd2395410edd3d26a6a537f6dbe3e1292e7ce852222956d89acc2b",
+    "size": 2352
+  },
+  {
+    "path": "reports/b12_decision_rule.md",
+    "sha256": "fcf3c014106ac724cd73822f1d5cac55481dd199deb573e3cc63c59e2a60afea",
+    "size": 336
+  },
+  {
+    "path": "reports/b12_pass1_blind.csv",
+    "sha256": "3141ad873417cb43f687c65a0be18cd7e706489cbe77ddaa5c8607d7e650c77d",
+    "size": 7404
+  },
+  {
+    "path": "reports/b13_decision_outcome.md",
+    "sha256": "326cde10e3e8d06fd836880cf06ea7d5e66f307c98ce0bb42aeca6ee2841a536",
+    "size": 1139
+  },
+  {
+    "path": "reports/b13_demo_ml_on.txt",
+    "sha256": "c51e29fccc23afe5eadc5f9886ec77f8147d748f9af3b15a88834a02f3a537f2",
+    "size": 3565
+  },
+  {
+    "path": "reports/b13_exposure.md",
+    "sha256": "dce52d37fa541ba07250c0defa5186971da70e8f52f8617ed17e3979e5b8a671",
+    "size": 697
+  },
+  {
+    "path": "reports/b14_candidates.md",
+    "sha256": "663d61ea3f27b9460fb2aa8b1745db3a54c68145954bcde76280adb21170e90f",
+    "size": 4869
+  },
+  {
+    "path": "reports/b14_final_report.md",
+    "sha256": "8226c41d6cfe3e20629f69c0c167dde01a2b69833d389296658e1f596439bd2b",
+    "size": 3237
+  },
+  {
+    "path": "reports/b14_hash_after.json",
+    "sha256": "486d7d1658695bf1b0c90042ae86fefa936da8968884b149e511f79a8b0c9009",
+    "size": 15936
+  },
+  {
+    "path": "reports/b14_hash_before.json",
+    "sha256": "33621a60a189cccc1fd290bdd7fc2cfb555c1c3281bbbbfed9f467a74ea58256",
+    "size": 15936
+  },
+  {
+    "path": "reports/b14_hash_diff.txt",
+    "sha256": "cb5bf993070c690ae850117a8f79577920319f3027d71e711be1ad9a5226e403",
+    "size": 139
+  },
+  {
+    "path": "reports/b14_part_a.md",
+    "sha256": "a91be73d1ad92d1eb56fb5e34de0f9a9479551b5aa60747fed2a474b0902a47c",
+    "size": 3593
+  },
+  {
+    "path": "reports/b14_staging/allergy_rules.csv",
+    "sha256": "c9ba71cfb3e6c43692b53b241b7a213c74be3c9bdd54bd10cfc52d7ebb022f2b",
+    "size": 2064
+  },
+  {
+    "path": "reports/b14_staging/dose_limits.csv",
+    "sha256": "e5c7baef6da2f1d41b5b06b83d603ccebbb5b956432f9fd3deac821ef49bc595",
+    "size": 198
+  },
+  {
+    "path": "reports/b14_staging/drug_disease_rules.csv",
+    "sha256": "57639b57c4a41543fa70b78171cba086d32125f9db7937ceb38cab6f614532ca",
+    "size": 2334
+  },
+  {
+    "path": "reports/b14_staging/excerpts.csv",
+    "sha256": "b87c668e34cfb3886adbcdcbbe83f3a8c8ffe4aa0c9c427ff5e949ef50355157",
+    "size": 1213
+  },
+  {
+    "path": "reports/b14_staging/review_note.txt",
+    "sha256": "ab1b8427e7089e5586d119fb22449fd673dd87998d2279013f0c5a1f86babff9",
+    "size": 179
+  },
+  {
+    "path": "reports/b14_validator_output.txt",
+    "sha256": "376dc445959e69c89ae24fc6cc62f5dc13cae8860c2260bf1dc5429a13b90d71",
+    "size": 579
+  },
+  {
+    "path": "reports/b15_demo.txt",
+    "sha256": "3c675f481dc920af0be9d2e2614fd02b3571f8132134f198fc7bc630e4e1a879",
+    "size": 7273
+  },
+  {
+    "path": "reports/b15_final_report.md",
+    "sha256": "5a9d0733311de2a8c926c145457cb4c632d58ba0b97fa9e7f090698186b3562a",
+    "size": 6218
+  },
+  {
+    "path": "reports/b15_hash_after.json",
+    "sha256": "64678445db2ad2f23039030a926abc0bd929201d6a83e2a7295b79a8897b4f65",
+    "size": 16231
+  },
+  {
+    "path": "reports/b15_hash_before.json",
+    "sha256": "486d7d1658695bf1b0c90042ae86fefa936da8968884b149e511f79a8b0c9009",
+    "size": 15936
+  },
+  {
+    "path": "reports/b15_hash_diff.json",
+    "sha256": "d86908d45bb67c31ac432de866867856c18d86a9f1892224c6e02d4420502163",
+    "size": 426
+  },
+  {
+    "path": "reports/b15_hash_diff.txt",
+    "sha256": "d45c56897e499cc82ad549d7401a444c698fe0b0889fe0a2b56a1dbd24c4b231",
+    "size": 341
+  },
+  {
+    "path": "reports/b15_promotion_report.txt",
+    "sha256": "e2dd3c4c75c446d2db11fc09a5ef3026e1918f4437058e3070477e99c2a9852a",
+    "size": 881
+  },
+  {
+    "path": "reports/b15_validator_output.txt",
+    "sha256": "376dc445959e69c89ae24fc6cc62f5dc13cae8860c2260bf1dc5429a13b90d71",
+    "size": 579
+  },
+  {
+    "path": "reports/b161_cache_after_final.json",
+    "sha256": "e54f907bf44ffca042e381fdecb634949f05df7b96a209dec3d8f8ececda9987",
+    "size": 16048
+  },
+  {
+    "path": "reports/b161_cache_before_final.json",
+    "sha256": "e54f907bf44ffca042e381fdecb634949f05df7b96a209dec3d8f8ececda9987",
+    "size": 16048
+  },
+  {
+    "path": "reports/b161_cache_diff.txt",
+    "sha256": "dd80a026d7b3ec8fd4713e66ab00419fa307f93f175249783cecac0697c2af9b",
+    "size": 7498
+  },
+  {
+    "path": "reports/b161_capability_evidence.md",
+    "sha256": "4b48a602c27a70d786987e9c49801ee87f0dfbc7a5ead2c5527df45862a25f00",
+    "size": 2447
+  },
+  {
+    "path": "reports/b161_commit_prep.md",
+    "sha256": "ada38500407fbe4c321ef491fa4a9f6f5b762791c273c1558440f0fe4d880df2",
+    "size": 3523
+  },
+  {
+    "path": "reports/b161_deck_facts.md",
+    "sha256": "500640b4003c86bb8e40b36a7b29f39fcbf58c41c3f395252d255ac7754e9343",
+    "size": 2030
+  },
+  {
+    "path": "reports/b161_demo_1.txt",
+    "sha256": "e9ad2ff2422778d15b4af4adeb195a891389835ccb11207685809523066da6ce",
+    "size": 4258
+  },
+  {
+    "path": "reports/b161_demo_1_comparison.txt",
+    "sha256": "5f23f5433d8bc7db164bbfd6c9650337f068b47f8fd7a39f892806865b0a7757",
+    "size": 99
+  },
+  {
+    "path": "reports/b161_demo_2.txt",
+    "sha256": "d03d3e73b585be50651d22839333716df3cb1a5d633ae289cbb247a2677dae9d",
+    "size": 3518
+  },
+  {
+    "path": "reports/b161_demo_2_comparison.txt",
+    "sha256": "5f23f5433d8bc7db164bbfd6c9650337f068b47f8fd7a39f892806865b0a7757",
+    "size": 99
+  },
+  {
+    "path": "reports/b161_demo_3.txt",
+    "sha256": "384d8841b8a58fef6ac55f35dc89640cddaef90cf6ff4dc1bdd17fbe2c0f2bdf",
+    "size": 3843
+  },
+  {
+    "path": "reports/b161_demo_3_comparison.txt",
+    "sha256": "5f23f5433d8bc7db164bbfd6c9650337f068b47f8fd7a39f892806865b0a7757",
+    "size": 99
+  },
+  {
+    "path": "reports/b161_demo_first40.md",
+    "sha256": "938aedd2ef51086334d1bb9a86399f629f83875ab2f6707d0ccf59ba0f154412",
+    "size": 10106
+  },
+  {
+    "path": "reports/b161_final_report.md",
+    "sha256": "a0533ec4c04cb70fe962feb0c82f68330e5d2d135d76bd8fc3a64623e8c2dd61",
+    "size": 4416
+  },
+  {
+    "path": "reports/b161_hash_after.json",
+    "sha256": "fd5774d7a162459ae0275b10b956aa48f832e3e97f6126a7f49884599541bcfa",
+    "size": 11458
+  },
+  {
+    "path": "reports/b161_hash_before.json",
+    "sha256": "fd5774d7a162459ae0275b10b956aa48f832e3e97f6126a7f49884599541bcfa",
+    "size": 11458
+  },
+  {
+    "path": "reports/b161_hash_diff.txt",
+    "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f",
+    "size": 4
+  },
+  {
+    "path": "reports/b161_readme_diff.patch",
+    "sha256": "2500e342c03b06d28d2a042d3d7a015dc10748aadb597e2144bf2db67937cd46",
+    "size": 13349
+  },
+  {
+    "path": "reports/b161_readme_scan.txt",
+    "sha256": "160b7630833f3bd3ab586841ce09f7a558ab9cb2a2bf747f0f7cbc7286aa4dc4",
+    "size": 317
+  },
+  {
+    "path": "reports/b161_tally_reconciliation.md",
+    "sha256": "87b96cf38af482b8c0e8bef53d7ae0f1cf5bc1a6acc2799926c949294cf6af2d",
+    "size": 2550
+  },
+  {
+    "path": "reports/b16_capability_evidence.md",
+    "sha256": "3bbb1dca5d192e612e979d09d46bdf07e18b636057f5ef888bcb3d562bdd0f96",
+    "size": 6134
+  },
+  {
+    "path": "reports/b16_deck_facts.md",
+    "sha256": "7d25c425d84ee028b8357c5acd3bb8246652f7c1653123e1047225fe6728d4fb",
+    "size": 3241
+  },
+  {
+    "path": "reports/b16_demo_run.txt",
+    "sha256": "e50bba6eb2d6d6530efe0ae5d670348dd5c9fd03849232508cc9ad9bebd1be4b",
+    "size": 10312
+  },
+  {
+    "path": "reports/b16_final_report.md",
+    "sha256": "c952346d1b988a72fc38e722b63adfa425dd96562dae9dc4d03a011690356e05",
+    "size": 26888
+  },
+  {
+    "path": "reports/b16_gitignore_recommendation.md",
+    "sha256": "e08fbf11add988e229e0d3bf732fe946fc655418f23483a4e16946978c931a15",
+    "size": 1046
+  },
+  {
+    "path": "reports/b16_hash_after.json",
+    "sha256": "377c9a8cde415bd0abefa74c4a0a2bae8a8594dac50e4cf6ce7c8feeff7eb2be",
+    "size": 15666
+  },
+  {
+    "path": "reports/b16_hash_before.json",
+    "sha256": "a1df7037064089abf8c3bee7858a29474769d500a9a7022e8c7861c34b0d97e3",
+    "size": 15337
+  },
+  {
+    "path": "reports/b16_hash_diff.txt",
+    "sha256": "f920c04408234fc8710debec84d62f265d2ca6ada39eb6481ee852ec214962b7",
+    "size": 1104
+  },
+  {
+    "path": "reports/b16_hygiene_scan.md",
+    "sha256": "5890304b172ccee3792c38693faf4f96cdf3a26572f514c716e9cefb31848667",
+    "size": 1556
+  },
+  {
+    "path": "reports/b16_readme_draft.md",
+    "sha256": "ec0519ebc8b8f7dfad1e5345e7be499a2be6e6b3c46dd2b2c2209d2ee1070431",
+    "size": 3643
+  },
+  {
+    "path": "reports/b17_b18_followup_status.md",
+    "sha256": "e8ce1ee300cae47cbbbfa0d6351e55145d96e71db1f746befd31a0139f93accb",
+    "size": 2265
+  },
+  {
+    "path": "reports/b17_staging/dose_limits.csv",
+    "sha256": "e5c7baef6da2f1d41b5b06b83d603ccebbb5b956432f9fd3deac821ef49bc595",
+    "size": 198
+  },
+  {
+    "path": "reports/b17_staging/excerpts.csv",
+    "sha256": "7f7b42fb453decdc3531e33ee2fa054ae5d7f7a831a98b78835aecad774d5f9e",
+    "size": 24
+  },
+  {
+    "path": "reports/b17a_candidates.md",
+    "sha256": "9105491a26645a6ae88f24b2f72c45c99a6e68a77556b1a22afef8b25abda54d",
+    "size": 2263
+  },
+  {
+    "path": "reports/b17a_final_report.md",
+    "sha256": "659e93f77c62794b86174ebb879684c3b6b9fcba0dc6496f28d45ee7e34e40ca",
+    "size": 3220
+  },
+  {
+    "path": "reports/b17a_hash_after.json",
+    "sha256": "377c9a8cde415bd0abefa74c4a0a2bae8a8594dac50e4cf6ce7c8feeff7eb2be",
+    "size": 15666
+  },
+  {
+    "path": "reports/b17a_hash_before.json",
+    "sha256": "377c9a8cde415bd0abefa74c4a0a2bae8a8594dac50e4cf6ce7c8feeff7eb2be",
+    "size": 15666
+  },
+  {
+    "path": "reports/b17a_hash_diff.txt",
+    "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f",
+    "size": 4
+  },
+  {
+    "path": "reports/b17a_part_a.md",
+    "sha256": "e95055b7db8b9bfce5cf38fe6c612a00e24ec2ca62c075c7fb624a35016af784",
+    "size": 2660
+  },
+  {
+    "path": "reports/b17a_validator_output.txt",
+    "sha256": "1c73f64a1583377c3b0c70ac0a04bd6cbda2b8c03a12ce9ef358ba0f85e41a28",
+    "size": 565
+  },
+  {
+    "path": "reports/b6_coverage_audit.md",
+    "sha256": "b7f9f9240ab7ee1f6df0dd59bb004f2d2377900f87e26d90c8de29f0a1410eab",
+    "size": 2139
+  },
+  {
+    "path": "reports/b9_anecdotal_checks.md",
+    "sha256": "87b0e06d3beeb463cb13f8c51870b75110a1092622b0c689e50c7d380461b4c0",
+    "size": 2710
+  },
+  {
+    "path": "reports/b9_demo_ml_off.txt",
+    "sha256": "85d92c8e0a96992e3b9a74fca8d40625325b7f6dacea49f45e0d77cefc260b28",
+    "size": 2925
+  },
+  {
+    "path": "reports/b9_demo_ml_on.txt",
+    "sha256": "9733d2abb5fde2ee1e93c85beef6f46f50d2a71f570fe502161b4a85ef7ad6c3",
+    "size": 3232
+  },
+  {
+    "path": "reports/b9_five_examples.md",
+    "sha256": "ad0f4db252c1aabdbfbc6969c5924eefb084bcbc873c65bf93fc133f5ea9bbe3",
+    "size": 1385
+  },
+  {
+    "path": "reports/b9_verification.md",
+    "sha256": "1ac4e16f7cc498b5d2df5ab66ae0cd1b46a5cf8d1bf9041fd1bd923f18b0a3ea",
+    "size": 4561
+  },
+  {
+    "path": "reports/brand_mapping_verification.md",
+    "sha256": "ed6133367b49c308ddf1bbd6da8b357151e7948f3b24aaf8db9e8062b319336e",
+    "size": 1476
+  },
+  {
+    "path": "reports/ddinter_import.md",
+    "sha256": "e546ddb65c5fe2d628d28d72e6f5b7410a3d7769b5fc342942f785650b0490a2",
+    "size": 533
+  },
+  {
+    "path": "reports/ddinter_spotcheck.md",
+    "sha256": "206d5c050b3e1b21312330814af70210e3994aed51c5f147bfcc5ddbcf10cdba",
+    "size": 1113
+  },
+  {
+    "path": "reports/demo/demo_1.json",
+    "sha256": "3cd9cf962f1fe097ee064990be9155263706f513e61780905dcb6c0fd8de4088",
+    "size": 10004
+  },
+  {
+    "path": "reports/demo/demo_1.txt",
+    "sha256": "a6df4bb656e25e6964b8b359de5184a4971e78a07a77fbdc5bed27f621aef298",
+    "size": 4199
+  },
+  {
+    "path": "reports/demo/demo_2.json",
+    "sha256": "6f3c981e8a7ce9e39a4cb3c26379246fce3f0caef1c00ad4342cd4b891171345",
+    "size": 8148
+  },
+  {
+    "path": "reports/demo/demo_2.txt",
+    "sha256": "6b915eb53a33d624f85e40a0216b9221cef37dc271bdabdb97d43dfaa36ac8c0",
+    "size": 3470
+  },
+  {
+    "path": "reports/demo/demo_3.json",
+    "sha256": "d9899e9d8c614a17c290ee18448b4559a222389bb4c89aa800fc942dfdeb4282",
+    "size": 6291
+  },
+  {
+    "path": "reports/demo/demo_3.txt",
+    "sha256": "a4c8ffe8983769f497ddce8f255db3de934e42464f16fb2a837d00c64b1cd508",
+    "size": 3801
+  },
+  {
+    "path": "reports/demo_b6.txt",
+    "sha256": "1b56d5b23b3cbc1f29a9bad976ebda5c3da5d3820374e50638d619619face499",
+    "size": 2851
+  },
+  {
+    "path": "reports/drug_class_verification.json",
+    "sha256": "ac8a071f2ac51794411001c1db7658c5e85e4c16b30a270cd6b94012637e0581",
+    "size": 1882
+  },
+  {
+    "path": "reports/ml_data_audit.md",
+    "sha256": "ba1adfbaf1e135f6faca23f35b638bd3f224cb40d78b7b4ef882df7cbe5d58f8",
+    "size": 1338
+  },
+  {
+    "path": "reports/ml_eval.md",
+    "sha256": "d022653cc9d7b916438870993f8e06d94fa06fb3f47f91bbeaccca4268ccc8d5",
+    "size": 9129
+  },
+  {
+    "path": "reports/ml_gate.json",
+    "sha256": "28e34d2797a4cc7611d336a753aa4dfababf0090072e578349905c53dd766f7b",
+    "size": 1171
+  },
+  {
+    "path": "reports/ml_model_card.md",
+    "sha256": "016d3cb14385d1c0d63b13af768e21bf9f102806a83a3a8e9cb075da431a8be1",
+    "size": 5856
+  },
+  {
+    "path": "reports/ml_on_demo_b11.txt",
+    "sha256": "f2a0fea96a44f65010f36d35df03efc13d2c716c50eda9b8307b48ecdcca9271",
+    "size": 3527
+  },
+  {
+    "path": "reports/ml_spotcheck.csv",
+    "sha256": "f1423d08dc4dc3a2ed3a7df39666a7572d1aca79b131f85f1aab4fd1cf4caeea",
+    "size": 1263
+  },
+  {
+    "path": "reports/ml_spotcheck_b10_1.csv",
+    "sha256": "fb7ee4e6cb752560c879c25dedaa2e244a2e817457e59b455b53ee78ed172eaa",
+    "size": 722
+  },
+  {
+    "path": "reports/ml_spotcheck_filled.csv",
+    "sha256": "94caf9198000430d1d06e393f57990fa68346f7748cb1e2fd2daa1f63e6736df",
+    "size": 8573
+  },
+  {
+    "path": "reports/ml_spotcheck_kcl.csv",
+    "sha256": "b7403b69d47baa03e63550443a962ec2e21b7f1320e565e6e964cdffadca2578",
+    "size": 447
+  },
+  {
+    "path": "reports/ml_unknown_distribution.md",
+    "sha256": "e53060c6e5d1f81f39764afb228147276faa34e7199a31ff9373765869a8e1fb",
+    "size": 5542
+  },
+  {
+    "path": "reports/parser_evidence_b6.jsonl",
+    "sha256": "3acfe900c631bab7352b646e3b46df9b2177213194e4c72714e7d13e5cf10851",
+    "size": 7366
+  },
+  {
+    "path": "reports/parser_evidence_b6_2.jsonl",
+    "sha256": "3b0bfd8e450ef539cf02c53726c1ca26b14abb8c0ca99f5b9f23c1799cc7d33c",
+    "size": 3241
+  },
+  {
+    "path": "scripts/apply_review.py",
+    "sha256": "6f6fffdc6e40853e9f60d7cb17a7726c09a924cda3018e7fac3732f0f2e22221",
+    "size": 1992
+  },
+  {
+    "path": "scripts/audit_ddinter_import.py",
+    "sha256": "b5b9636363181edc150e0682689683f0ea450fe489d27ab792fb62a517be722c",
+    "size": 2334
+  },
+  {
+    "path": "scripts/check_eval_tables.py",
+    "sha256": "0eabaa25c465add0ff0f093d95141e722532e1fd5a1acc9451919c75e58e9a28",
+    "size": 908
+  },
+  {
+    "path": "scripts/export_ml_spotcheck.py",
+    "sha256": "c4046ea1777414780b2d02dd6165fca04c17356e3cd0b9a9fa0d1e8e0cf5e331",
+    "size": 3568
+  },
+  {
+    "path": "scripts/export_ml_spotcheck_b10_2.py",
+    "sha256": "c1f350de88ef123dc93df9d4413c743a5ae1f311b3c4b502e1aa788ee6babfa6",
+    "size": 7251
+  },
+  {
+    "path": "scripts/export_review_sheet.py",
+    "sha256": "15875186495b5df0aafad1defe29983e95fc9883b3425f279b6144604eed1ac3",
+    "size": 1603
+  },
+  {
+    "path": "scripts/import_ddinter.py",
+    "sha256": "699b5f760b8d5ccad16e83bc5ee6247756a516f7bb47c268c7c6e9ad61195c7a",
+    "size": 10007
+  },
+  {
+    "path": "scripts/ml_unknown_distribution.py",
+    "sha256": "7489fde49deac510b066a510d2f6be5b1d4284b9514ae55e0bc55ec982d1f3da",
+    "size": 6186
+  },
+  {
+    "path": "scripts/promote_staged_rows.py",
+    "sha256": "b0b4689c1d9ae07870696099c7aa0de4291734c2a0c5f948101167d6d9b26978",
+    "size": 3112
+  },
+  {
+    "path": "scripts/run_demo.py",
+    "sha256": "f5d9b91086ba7521edd9e986816bd9f393848f23026390811272c52697946192",
+    "size": 3813
+  },
+  {
+    "path": "scripts/run_ml_ablation_b10_2.py",
+    "sha256": "90779b752f4f4e7628eda07a9f130de02978b2aa678cea9d36d6932660dac245",
+    "size": 8789
+  },
+  {
+    "path": "scripts/tally_spotcheck.py",
+    "sha256": "db4c868130ec76932b2b2ec478c3c8443a409e91e908f9ab5f3673ded49549e2",
+    "size": 3104
+  },
+  {
+    "path": "scripts/tasks.ps1",
+    "sha256": "30f63395c5ebf5e134563b9607f59a3f96d70fdb9db9ae4f191323ee0e42e57d",
+    "size": 496
+  },
+  {
+    "path": "scripts/train_severity_model.py",
+    "sha256": "c200d89937285f8a47629892f7ee42c54bb09d5dfd6c2f0d82e2e2a2106574b8",
+    "size": 9046
+  },
+  {
+    "path": "scripts/validate_checker_csvs.py",
+    "sha256": "59ff348aa6186048f832598d61e36b90f9eecc5a2b280fab90da002899fdaf77",
+    "size": 10464
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/allergy_rules.csv",
+    "sha256": "16d697af1a782e17d897f9f38f07879f156878cf91da92b10519ec3661d35f8e",
+    "size": 328
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/conditions.csv",
+    "sha256": "a1354d33eccc620fe24817f1cb2b691104ef9fca1ee5ed985b3d82e0797117a7",
+    "size": 195
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/dose_limits.csv",
+    "sha256": "4fb117206bea6f3265864403f97bf57f419390de1b05a738379ce6b2f9f6738e",
+    "size": 343
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/drug_disease_rules.csv",
+    "sha256": "7f034e0fbd84043d4d14ca8e4badf780df905c392fc0de8942acbfc11a74ebf4",
+    "size": 315
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/severity_policy.csv",
+    "sha256": "36c4fa55edd28afd8f38d992c56227e57797270b454505a14a32af0317569a7d",
+    "size": 182
+  },
+  {
+    "path": "tests/fixtures/checker_csvs/units.csv",
+    "sha256": "2fcb66877d0ab13ba20811f992e99ecd0317421953d52070a5950018789089e6",
+    "size": 97
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_A.csv",
+    "sha256": "e71264ef5b58483ba15dedb9cb19f4b489d881eaba79aac182af9e6b3599d802",
+    "size": 200
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_B.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_D.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_H.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_L.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_P.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_R.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/raw/ddinter_downloads_code_V.csv",
+    "sha256": "84e20c50455fe748bb8a2c8abea4cd5fc53639dddfadfac48e414c1e4ff84574",
+    "size": 45
+  },
+  {
+    "path": "tests/fixtures/ml/whitelist.csv",
+    "sha256": "9fa8b3e47cb2295aa086339c143d36e12ab1dc75e79a01649b4073086f431f7f",
+    "size": 15
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/allergy_rules.csv",
+    "sha256": "03218810ccee91a2fad4bbc46e7ab1017db319693d6036dd6ee0d049890f8a75",
+    "size": 314
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/conditions.csv",
+    "sha256": "a1354d33eccc620fe24817f1cb2b691104ef9fca1ee5ed985b3d82e0797117a7",
+    "size": 195
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/dose_limits.csv",
+    "sha256": "4fb117206bea6f3265864403f97bf57f419390de1b05a738379ce6b2f9f6738e",
+    "size": 343
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/drug_disease_rules.csv",
+    "sha256": "7f034e0fbd84043d4d14ca8e4badf780df905c392fc0de8942acbfc11a74ebf4",
+    "size": 315
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/severity_policy.csv",
+    "sha256": "36c4fa55edd28afd8f38d992c56227e57797270b454505a14a32af0317569a7d",
+    "size": 182
+  },
+  {
+    "path": "tests/fixtures/validator_three_errors/units.csv",
+    "sha256": "2fcb66877d0ab13ba20811f992e99ecd0317421953d52070a5950018789089e6",
+    "size": 97
+  },
+  {
+    "path": "tests/snapshots/combiflam_dolo_warfarin.txt",
+    "sha256": "ec9d0c3692e43befb53019699cee8f637db9d58573234d93b6a4cd7d7eaeab77",
+    "size": 3814
+  },
+  {
+    "path": "tests/test_checker_csv_loaders.py",
+    "sha256": "e7d1b09c6492b82d343c97b6ee26ff53262663d1d1f56315b185c48b55b9ad81",
+    "size": 867
+  },
+  {
+    "path": "tests/test_clinical_checkers.py",
+    "sha256": "ce7c9ca1549465b4bc3d137efd80989723286460531452810dc119f0ed1e0039",
+    "size": 6052
+  },
+  {
+    "path": "tests/test_ddi_combo.py",
+    "sha256": "dd4325a77f79f426a739a74761a2ce1e5dbb0014ea1d03a722640180722c277c",
+    "size": 2006
+  },
+  {
+    "path": "tests/test_duplicate.py",
+    "sha256": "82c297ed08da91473a8378a6484d9c34281671296d76ae7cf3ab869138d2488c",
+    "size": 5495
+  },
+  {
+    "path": "tests/test_explain.py",
+    "sha256": "bea3c0cdac503e2ebff7441101fb27789c95aa935891a973102130bbb3e5889a",
+    "size": 4414
+  },
+  {
+    "path": "tests/test_llm_layer.py",
+    "sha256": "53ec025c421f473a456c3ddb993ad6be897b792c2b5515b648389908573905c7",
+    "size": 8879
+  },
+  {
+    "path": "tests/test_medsafe.py",
+    "sha256": "951f08ee05ecdd4cc8fd5841dbe0a74f510084cd0eb9be1d356cb3af1d1acdea",
+    "size": 9754
+  },
+  {
+    "path": "tests/test_ml_pipeline.py",
+    "sha256": "b67be5d5d2879c182dc904581824421662bdaca1dd478edbaac0027f0ba11c37",
+    "size": 7563
+  },
+  {
+    "path": "tests/test_ml_reporting.py",
+    "sha256": "8a09ba83ba4a5f780de91e3902b683c67d9528bd59828e09c1de7bc95af902a3",
+    "size": 14002
+  },
+  {
+    "path": "tests/test_ml_spotcheck.py",
+    "sha256": "b5cb48d9acd89f5d67d0277d5107a4167e29bf4a945cc2e74d9f55b488d308d8",
+    "size": 1522
+  },
+  {
+    "path": "tests/test_ml_spotcheck_b10_2.py",
+    "sha256": "271293b7c518be43f197108c2f0d65dd3b7ffc89434bdd089a52064d988b759e",
+    "size": 2307
+  },
+  {
+    "path": "tests/test_normalizer.py",
+    "sha256": "cfe3188d5dcc53dedc514a7e51f99e3bd1f921cdab262fc13cbfa2ba019833bd",
+    "size": 3797
+  },
+  {
+    "path": "tests/test_parser_rx.py",
+    "sha256": "5dff2d6a60077970c5e20c64e623199d8ec81f34f97677e0cf7df82ff2eb6b0e",
+    "size": 17075
+  },
+  {
+    "path": "tests/test_report.py",
+    "sha256": "839bd7d928230c428f2e212db81b88bf6411657dcf76fc7e9995e4b2e1a5ea40",
+    "size": 6686
+  },
+  {
+    "path": "tests/test_tally_spotcheck.py",
+    "sha256": "17d80e176d3e5aa5e0f2cbd56f84892bc36d498ba34fabdf3bd63a70ca0a174e",
+    "size": 2323
+  },
+  {
+    "path": "tests/test_validate_checker_csvs.py",
+    "sha256": "9aaef6a3417a228546e620e875e60d92519ee1c510761ee3aeff6d56bbfba51e",
+    "size": 9497
+  },
+  {
+    "path": "ui/app.py",
+    "sha256": "a5bf1645afcbbebfd4d106b455501cca5860dd4d7ad0c5787e2c4a031f26c755",
+    "size": 2371
+  }
+]

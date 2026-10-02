@@ -1,0 +1,24 @@
+{
+  "added": [
+    "medsafe/api/static/app.js",
+    "medsafe/api/static/index.html",
+    "medsafe/api/static/styles.css",
+    "medsafe/checkers/dose.py",
+    "scripts/make_submission_zip.py",
+    "scripts/measure_llm_acceptance.py"
+  ],
+  "removed": [],
+  "changed": [
+    "data/seed/dose_limits.csv",
+    "medsafe/api/app.py",
+    "medsafe/checkers/engine.py",
+    "medsafe/explain/templates.py",
+    "medsafe/llm/client.py",
+    "medsafe/llm/parser_fallback.py",
+    "medsafe/llm/service.py",
+    "medsafe/models/domain.py",
+    "scripts/promote_staged_rows.py",
+    "scripts/run_demo.py",
+    "scripts/validate_checker_csvs.py"
+  ]
+}

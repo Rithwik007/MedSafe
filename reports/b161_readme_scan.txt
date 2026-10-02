@@ -1,0 +1,10 @@
+README.md: absolute_windows_path: none
+README.md: email: none
+README.md: phone: none
+README.md: key_pattern: none
+README.md: rule7_banned_phrase: none
+.gitignore: absolute_windows_path: none
+.gitignore: email: none
+.gitignore: phone: none
+.gitignore: key_pattern: none
+.gitignore: rule7_banned_phrase: none

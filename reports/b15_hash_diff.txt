@@ -1,0 +1,7 @@
+Before files: 104
+After files: 106
+Added: ['medsafe/checkers/allergy.py', 'medsafe/checkers/drug_disease.py']
+Removed: []
+Changed: ['data/seed/allergy_rules.csv', 'data/seed/drug_disease_rules.csv', 'medsafe/checkers/engine.py', 'medsafe/checkers/stubs.py', 'medsafe/explain/templates.py']
+models/ diff empty: True
+TEST_SPLIT_TOUCH=0

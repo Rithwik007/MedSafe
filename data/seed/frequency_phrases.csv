@@ -1,0 +1,10 @@
+phrase,code,status
+once daily,OD,CONVENTION
+twice daily,BD,CONVENTION
+three times a day,TDS,CONVENTION
+four times a day,QID,CONVENTION
+at night,HS,CONVENTION
+as needed,PRN,CONVENTION
+every 8 hours,Q8H,CONVENTION
+every 12 hours,Q12H,CONVENTION
+every 6 hours,Q6H,CONVENTION

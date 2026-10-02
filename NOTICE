@@ -1,0 +1,14 @@
+MedSafe data attribution notice
+
+DDInter drug-drug interaction data
+
+This project includes a filtered derivative of data from DDInter, maintained by the Computational Biology & Drug Design Group.
+
+Attribution: DDInter, Computational Biology & Drug Design Group.
+Download page: https://ddinter.scbdd.com/download/
+Terms: https://ddinter.scbdd.com/terms/
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The DDInter-derived rule rows in `data/seed/rules.csv` retain source attribution and identify the CC BY-NC-SA 4.0 license in their `license` field. The machine-learning severity model trained on DDInter labels is also adapted from DDInter and is distributed under the same CC BY-NC-SA 4.0 terms: attribution, non-commercial use, and ShareAlike. This project filters DDInter rows to a local drug whitelist and maps source severity labels to the project schema; the imported rows are not independently clinically reviewed. Where a derivative of this DDInter material is distributed, it must retain attribution, remain non-commercial under the stated license, and use the same license terms. The DDInter terms and license govern; consult them before redistributing this material.
+
+The original DDInter CSV downloads are not included in this repository. Download them from the official download page if needed, and review the current terms before use.

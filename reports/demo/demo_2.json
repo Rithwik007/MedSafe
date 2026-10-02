@@ -1,0 +1,182 @@
+{
+  "checker_status": [
+    {
+      "checker": "DDI",
+      "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+      "rules_loaded": 313,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DUPLICATE",
+      "reason": "Duplicate policy loaded.",
+      "rules_loaded": 2,
+      "status": "RAN"
+    },
+    {
+      "checker": "ALLERGY",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DRUG_DISEASE",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DOSE",
+      "reason": "1 reviewed dose row(s) loaded. Coverage is a few source-text-checked label rows; adult single-order checks only; this is not clinical review.",
+      "rules_loaded": 1,
+      "status": "PARTIAL"
+    }
+  ],
+  "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+  "findings": [
+    {
+      "drugs_involved": [
+        "Amoxicillin",
+        "Ciprofloxacin"
+      ],
+      "evidence": {
+        "ddinter_ids": [
+          "DDInter384",
+          "DDInter83"
+        ],
+        "rationale": null,
+        "review_label": "Not reviewed",
+        "review_status": "dataset_imported_not_independently_clinically_reviewed",
+        "source_name": "DDInter downloadable interaction dataset",
+        "source_url": "https://ddinter.scbdd.com/download/",
+        "version_or_access_date": "Downloaded 2026-09-30"
+      },
+      "explanation": {
+        "headline": "UNSPECIFIED: ciprofloxacin + amoxicillin",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+        "review_label": "Not reviewed",
+        "risk": "DDInter lists this pair at Unspecified severity.",
+        "rule_id": "DDINTER-DDInter384-DDInter83",
+        "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter384, DDInter83)",
+        "trigger": "Ingredients: ciprofloxacin + amoxicillin. Orders: Amoxicillin, Ciprofloxacin.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: ciprofloxacin + amoxicillin. Orders involved: Amoxicillin, Ciprofloxacin.",
+      "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+      "rule_id": "DDINTER-DDInter384-DDInter83",
+      "severity": "UNSPECIFIED",
+      "type": "DDI"
+    },
+    {
+      "drugs_involved": [
+        "Amoxicillin"
+      ],
+      "evidence": {
+        "ddinter_ids": [],
+        "rationale": "4 CONTRAINDICATIONS",
+        "review_label": "Source text verified; not clinical review",
+        "review_status": "Source text verified; not clinical review",
+        "source_name": "DailyMed",
+        "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641ec2a8-368a-4c5c-8c11-37366a06ce93",
+        "version_or_access_date": "2026-10-02"
+      },
+      "explanation": {
+        "headline": "UNSPECIFIED: Amoxicillin",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "Label contraindication applies to the stated serious hypersensitivity history. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.",
+        "review_label": "Source text verified; not clinical review",
+        "risk": "Allergy finding has Unspecified severity.",
+        "rule_id": "B14-ALG-001",
+        "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641ec2a8-368a-4c5c-8c11-37366a06ce93",
+        "trigger": "Label category: CONTRAINDICATION. Label contraindicates amoxicillin in patients with a history of serious hypersensitivity to amoxicillin.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "Label category: CONTRAINDICATION. Label contraindicates amoxicillin in patients with a history of serious hypersensitivity to amoxicillin.",
+      "recommendation": "Label contraindication applies to the stated serious hypersensitivity history. Ask a pharmacist to review this label-based finding.",
+      "rule_id": "B14-ALG-001",
+      "severity": "UNSPECIFIED",
+      "type": "ALLERGY"
+    },
+    {
+      "drugs_involved": [
+        "Ciprofloxacin"
+      ],
+      "evidence": {
+        "ddinter_ids": [],
+        "rationale": "5.5 Exacerbation of Myasthenia Gravis",
+        "review_label": "Source text verified; not clinical review",
+        "review_status": "Source text verified; not clinical review",
+        "source_name": "DailyMed",
+        "source_url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b283d662-9be1-49c7-be03-cb21055314c1",
+        "version_or_access_date": "2026-10-02"
+      },
+      "explanation": {
+        "headline": "UNSPECIFIED: Ciprofloxacin",
+        "ml_note": null,
+        "plain_language": null,
+        "recommendation": "Label says to avoid ciprofloxacin in patients with a known history of myasthenia gravis. Ask a pharmacist to review this label-based finding. Severity was not classified by the source.",
+        "review_label": "Source text verified; not clinical review",
+        "risk": "Drug Disease finding has Unspecified severity.",
+        "rule_id": "B14-DIS-004",
+        "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b283d662-9be1-49c7-be03-cb21055314c1",
+        "trigger": "Label category: WARNING. Label states ciprofloxacin may exacerbate muscle weakness in myasthenia gravis and says to avoid it in patients with a known history.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": null,
+      "reason": "Label category: WARNING. Label states ciprofloxacin may exacerbate muscle weakness in myasthenia gravis and says to avoid it in patients with a known history.",
+      "recommendation": "Label says to avoid ciprofloxacin in patients with a known history of myasthenia gravis. Ask a pharmacist to review this label-based finding.",
+      "rule_id": "B14-DIS-004",
+      "severity": "UNSPECIFIED",
+      "type": "DRUG_DISEASE"
+    }
+  ],
+  "generated_at": "2026-10-02T13:15:12.213303+00:00",
+  "kb_fingerprint": "1d7ce256014c32eac174579b965f9df5ddafdf21e4daf83512b6f82e91b40ff5",
+  "llm_status": {
+    "model": null,
+    "parse_accepted": 0,
+    "parse_attempted": 0,
+    "parse_rejected": 0,
+    "reason": "Per-request use_llm flag is off.",
+    "state": "DISABLED",
+    "summary_accepted": 0,
+    "summary_rejected": 0
+  },
+  "ml_status": {
+    "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+    "reason": "Local checksum-verified model loaded; estimates remain unverified. 1 BELOW_THRESHOLD",
+    "state": "ENABLED",
+    "tau": 0.7054264738830898
+  },
+  "overall_statement": "Checkers: 1 RAN, 4 PARTIAL, 0 NOT_RUN_NO_DATA. Findings by severity: UNSPECIFIED 3. Absence of findings does not mean the prescription is safe.",
+  "suggested_matches": [],
+  "unresolved_items": [
+    {
+      "item": "adrenal insufficiency",
+      "reason": "No exact reviewed drug-condition rule matched this condition; this does not establish absence of a concern."
+    },
+    {
+      "item": "Amoxicillin",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Amoxicillin",
+      "reason": "Parser note: quantity per intake not stated"
+    },
+    {
+      "item": "Ciprofloxacin",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Ciprofloxacin",
+      "reason": "Parser note: quantity per intake not stated"
+    }
+  ]
+}

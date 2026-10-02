@@ -1,0 +1,21 @@
+# DDInter import audit
+
+- Whitelist pair rows: 527
+- Unique imported rules: 313
+- Source severity labels (raw whitelist rows):
+  - `Major`: 36
+  - `Minor`: 32
+  - `Moderate`: 171
+  - `Unknown`: 288
+- Unmapped source severity labels skipped:
+  - None
+- Imported severity counts:
+  - `CONTRAINDICATED`: 0
+  - `MAJOR`: 21
+  - `MODERATE`: 98
+  - `UNSPECIFIED`: 174
+  - `MINOR`: 20
+- Duplicate pair rows: 214
+- Duplicate severity conflict rows: 0
+- Missing drug-name rows skipped: 0
+- Zero-rule whitelist drugs: None

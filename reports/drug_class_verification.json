@@ -1,0 +1,115 @@
+{
+  "source": "NLM RxNav RxClass API, exact name match only, relaSource=ATC",
+  "source_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxClassAPIs.html",
+  "queried_on": "2026-09-30",
+  "matched": 27,
+  "todo_verify": [
+    "Acetylsalicylic acid",
+    "Levothyroxine",
+    "Benzylpenicillin"
+  ],
+  "codes_per_drug": {
+    "Warfarin": [
+      "B01AA"
+    ],
+    "Ibuprofen": [
+      "C01EB",
+      "G02CC",
+      "M01AE",
+      "M02AA",
+      "R02AX"
+    ],
+    "Metformin": [
+      "A10BA"
+    ],
+    "Lisinopril": [
+      "C09AA"
+    ],
+    "Amoxicillin": [
+      "J01CA"
+    ],
+    "Clarithromycin": [
+      "J01FA"
+    ],
+    "Simvastatin": [
+      "C10AA"
+    ],
+    "Sertraline": [
+      "N06AB"
+    ],
+    "Tramadol": [
+      "N02AX"
+    ],
+    "Acetaminophen": [
+      "N02BE"
+    ],
+    "Furosemide": [
+      "C03CA"
+    ],
+    "Atorvastatin": [
+      "C10AA"
+    ],
+    "Clopidogrel": [
+      "B01AC"
+    ],
+    "Digoxin": [
+      "C01AA"
+    ],
+    "Fluconazole": [
+      "D01AC",
+      "J02AC"
+    ],
+    "Ciprofloxacin": [
+      "J01MA",
+      "S01AE",
+      "S02AA",
+      "S03AA"
+    ],
+    "Azithromycin": [
+      "J01FA",
+      "S01AA"
+    ],
+    "Omeprazole": [
+      "A02BC"
+    ],
+    "Pantoprazole": [
+      "A02BC"
+    ],
+    "Carbamazepine": [
+      "N03AF"
+    ],
+    "Phenytoin": [
+      "N03AB"
+    ],
+    "Diazepam": [
+      "N05BA"
+    ],
+    "Codeine": [
+      "R05DA"
+    ],
+    "Potassium chloride": [
+      "A12BA",
+      "B05XA"
+    ],
+    "Spironolactone": [
+      "C03DA"
+    ],
+    "Doxycycline": [
+      "A01AB",
+      "J01AA"
+    ],
+    "Prednisolone": [
+      "A01AC",
+      "A07EA",
+      "C05AA",
+      "D07AA",
+      "D07XA",
+      "H02AB",
+      "R01AD",
+      "S01BA",
+      "S01CB",
+      "S02BA",
+      "S03BA"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "label": "README tests",
+    "command": "python -m pytest -q",
+    "exit_code": 0,
+    "first20": [
+      "...............................................s........................ [ 23%]",
+      "........................................................................ [ 47%]",
+      "........................................................................ [ 71%]",
+      "........................................................................ [ 95%]",
+      ".............. [100%]",
+      "301 passed, 1 skipped in 33.79s"
+    ]
+  },
+  {
+    "label": "README synthetic demo",
+    "command": "python -B scripts/run_demo.py",
+    "exit_code": 0,
+    "first20": [
+      "Demo 1: deterministic across 3 runs except generated_at",
+      "Saved: reports\\demo\\demo_1.txt and reports\\demo\\demo_1.json",
+      "First 40 text lines:",
+      "MedSafe medication safety report",
+      "Checkers: 1 RAN, 3 PARTIAL, 1 NOT_RUN_NO_DATA. Findings by severity: MAJOR 1, MODERATE 2, UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.",
+      "1 finding(s) carry an unverified ML estimate; these are not database classifications.",
+      "ML estimates come from a model trained on DDInter labels. They are not DDInter database classifications and have not been validated against outside sources at scale. A pharmacist must review each estimate.",
+      "Generated at: 2026-10-02T09:28:01.566353+00:00",
+      "Knowledge base SHA-256: 94197414b08525085da9fa15f829a9adf199cac12316d0f3bfadfbbb97add6dc",
+      "",
+      "Checker status:",
+      "- DDI: PARTIAL (313 rules; 174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.)",
+      "- DUPLICATE: RAN (2 rules; Duplicate policy loaded.)",
+      "- ALLERGY: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.)",
+      "- DRUG_DISEASE: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.)",
+      "- DOSE: NOT_RUN_NO_DATA (0 rules; No reviewed rows in dose_limits.csv; checker not run.)",
+      "- ML estimate: ENABLED (Local checksum-verified model loaded; estimates remain unverified. 2 pairs already have source classifications)",
+      "- LLM: DISABLED (Per-request use_llm flag is off.)",
+      "",
+      "Findings:",
+      "- MAJOR: warfarin + ibuprofen"
+    ]
+  },
+  {
+    "label": "README API start",
+    "command": "python -m uvicorn medsafe.api.app:app --reload",
+    "exit_code": null,
+    "first20": [
+      "INFO: Will watch for changes in directories: [clean-copy project]",
+      "INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)",
+      "INFO: Started reloader process using StatReload",
+      "INFO: Started server process",
+      "INFO: Waiting for application startup.",
+      "INFO: Application startup complete.",
+      "Stopped deliberately with Ctrl+C after successful startup."
+    ]
+  },
+  {
+    "label": "README API sample (TestClient)",
+    "command": "TestClient POST /analyze-text?use_llm=false with synthetic allergy + myasthenia gravis patient and Amoxicillin / Ciprofloxacin lines",
+    "exit_code": 0,
+    "first20": [
+      "HTTP 200",
+      "findings [('DDI', 'UNSPECIFIED'), ('ALLERGY', 'UNSPECIFIED'), ('DRUG_DISEASE', 'UNSPECIFIED')]",
+      "unresolved [{'item': 'Amoxicillin', 'reason': 'Parser note: frequency not stated or unresolved'}, {'item': 'Amoxicillin', 'reason': 'Parser note: quantity per intake not stated'}, {'item': 'Ciprofloxacin', 'reason': 'Parser note: frequency not stated or unresolved'}, {'item': 'Ciprofloxacin', 'reason': 'Parser note: quantity per intake not stated'}]"
+    ]
+  },
+  {
+    "label": "README checker validator",
+    "command": "python scripts/validate_checker_csvs.py",
+    "exit_code": 0,
+    "first20": [
+      "WARNING drug_disease_rules.csv: row 2, column condition: condition not in conditions.csv",
+      "WARNING drug_disease_rules.csv: row 3, column condition: condition not in conditions.csv",
+      "WARNING drug_disease_rules.csv: row 4, column condition: condition not in conditions.csv",
+      "WARNING drug_disease_rules.csv: row 5, column condition: condition not in conditions.csv",
+      "WARNING drug_disease_rules.csv: row 6, column condition: condition not in conditions.csv",
+      "allergy_rules.csv: 5 rows",
+      "drug_disease_rules.csv: 5 rows",
+      "dose_limits.csv: 0 rows",
+      "Summary: 0 errors, 5 warnings"
+    ]
+  },
+  {
+    "label": "README optional DDInter re-import",
+    "command": "python scripts/import_ddinter.py --output reports/ddinter_reimport/rules.csv",
+    "exit_code": 1,
+    "first20": [
+      "FileNotFoundError: No DDInter CSV files found in clean-copy/data/raw/ddinter (data/raw/ddinter/ddinter_downloads_code_*.csv are excluded)"
+    ]
+  }
+]

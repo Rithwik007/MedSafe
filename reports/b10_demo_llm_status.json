@@ -1,0 +1,29 @@
+{
+  "demo": "synthetic; fake client only; no network",
+  "findings_by_severity": "MAJOR 1, MODERATE 2, UNSPECIFIED 1",
+  "LLM_DISABLED": {
+    "state": "DISABLED",
+    "parse_attempted": 0,
+    "parse_accepted": 0,
+    "parse_rejected": 0,
+    "summary_accepted": 0,
+    "summary_rejected": 0
+  },
+  "FAKE_VALID_SUMMARY": {
+    "state": "ENABLED",
+    "parse_attempted": 0,
+    "parse_accepted": 0,
+    "parse_rejected": 0,
+    "summary_accepted": 3,
+    "summary_rejected": 0
+  },
+  "FAKE_GUARD_FAILURE": {
+    "state": "ENABLED",
+    "parse_attempted": 0,
+    "parse_accepted": 0,
+    "parse_rejected": 0,
+    "summary_accepted": 0,
+    "summary_rejected": 3,
+    "fallback": "deterministic finding explanation retained; no AI-worded summary rendered"
+  }
+}

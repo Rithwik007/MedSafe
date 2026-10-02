@@ -1,0 +1,29 @@
+{
+  "cold_drug_affects_gate": false,
+  "criterion": "RANDOM_PAIR test macro-F1 >= best baseline + fixed margin AND Major recall >= fixed minimum",
+  "enabled": true,
+  "fixed_thresholds": {
+    "macro_f1_margin": 0.05,
+    "major_recall_min": 0.5
+  },
+  "new_tau": 0.7054264738830898,
+  "old_tau": 0.3433901063125201,
+  "random_pair_test": {
+    "best_baseline_macro_f1": 0.5056800182019963,
+    "macro_f1_condition_passed": true,
+    "major_recall": 0.904879861283131,
+    "major_recall_condition_passed": true,
+    "model_macro_f1": 0.8445752891618956,
+    "model_name": "hist_gradient_boosting"
+  },
+  "reason": "original rule gave coverage 1.000",
+  "revised_after_test_run": true,
+  "threshold_rule": "On RANDOM_PAIR validation, choose smallest tau with covered accuracy >= 0.95, coverage >= 0.40, and Major-class precision among covered predictions >= 0.90; if none qualifies, tau=1.01.",
+  "validation_threshold_metrics": {
+    "coverage": 0.8754281040740173,
+    "covered_accuracy": 0.9500175172252715,
+    "covered_count": 17126,
+    "covered_major_prediction_count": 3620,
+    "major_precision_on_covered": 0.9085635359116022
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "checker_status": [
+    {
+      "checker": "DDI",
+      "reason": "174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.",
+      "rules_loaded": 313,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DUPLICATE",
+      "reason": "Duplicate policy loaded.",
+      "rules_loaded": 2,
+      "status": "RAN"
+    },
+    {
+      "checker": "ALLERGY",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DRUG_DISEASE",
+      "reason": "5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.",
+      "rules_loaded": 5,
+      "status": "PARTIAL"
+    },
+    {
+      "checker": "DOSE",
+      "reason": "1 reviewed dose row(s) loaded. Coverage is a few source-text-checked label rows; adult single-order checks only; this is not clinical review.",
+      "rules_loaded": 1,
+      "status": "PARTIAL"
+    }
+  ],
+  "disclaimer": "Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.",
+  "findings": [
+    {
+      "drugs_involved": [
+        "Lisinopril",
+        "Levothyroxine"
+      ],
+      "evidence": {
+        "ddinter_ids": [
+          "DDInter1064",
+          "DDInter1079"
+        ],
+        "rationale": null,
+        "review_label": "Not reviewed",
+        "review_status": "dataset_imported_not_independently_clinically_reviewed",
+        "source_name": "DDInter downloadable interaction dataset",
+        "source_url": "https://ddinter.scbdd.com/download/",
+        "version_or_access_date": "Downloaded 2026-09-30"
+      },
+      "explanation": {
+        "headline": "UNSPECIFIED: levothyroxine + lisinopril",
+        "ml_note": "Experimental ML estimate (unverified, not a database classification): possibly Minor. Estimated from patterns in other DDInter-classified pairs; other sources may disagree. Pharmacist review is still required. This estimate does not lower the need for review.",
+        "plain_language": null,
+        "recommendation": "No management guidance in the source dataset. Ask a pharmacist or check an authoritative label. Severity was not classified by the source.",
+        "review_label": "Not reviewed",
+        "risk": "DDInter lists this pair at Unspecified severity.",
+        "rule_id": "DDINTER-DDInter1064-DDInter1079",
+        "source": "https://ddinter.scbdd.com/download/ (DDInter IDs: DDInter1064, DDInter1079)",
+        "trigger": "Ingredients: levothyroxine + lisinopril. Orders: Lisinopril, Levothyroxine.",
+        "why": "Mechanism not provided by the source dataset."
+      },
+      "mechanism": null,
+      "ml_prediction": {
+        "label_status": "ML-PREDICTED, unverified",
+        "model_version": "hist_gradient_boosting-seed-20260930",
+        "predicted_label": "Minor",
+        "probability": 0.9258904517706756,
+        "reason": null,
+        "tau": 0.7054264738830898
+      },
+      "reason": "Interaction reported by DDInter without a severity classification; requires pharmacist review. Ingredient pair: levothyroxine + lisinopril. Orders involved: Lisinopril, Levothyroxine.",
+      "recommendation": "Pharmacist review required; consult an authoritative clinical source before action.",
+      "rule_id": "DDINTER-DDInter1064-DDInter1079",
+      "severity": "UNSPECIFIED",
+      "type": "DDI"
+    }
+  ],
+  "generated_at": "2026-10-02T13:15:16.990624+00:00",
+  "kb_fingerprint": "1d7ce256014c32eac174579b965f9df5ddafdf21e4daf83512b6f82e91b40ff5",
+  "llm_status": {
+    "model": null,
+    "parse_accepted": 0,
+    "parse_attempted": 0,
+    "parse_rejected": 0,
+    "reason": "Per-request use_llm flag is off.",
+    "state": "DISABLED",
+    "summary_accepted": 0,
+    "summary_rejected": 0
+  },
+  "ml_status": {
+    "model_fingerprint": "3c143a3e4f3adffeb3940a4d65018e895cdb877e3b17152a409bcc52601d705c",
+    "reason": "Local checksum-verified model loaded; estimates remain unverified.",
+    "state": "ENABLED",
+    "tau": 0.7054264738830898
+  },
+  "overall_statement": "Checkers: 1 RAN, 4 PARTIAL, 0 NOT_RUN_NO_DATA. Findings by severity: UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.",
+  "suggested_matches": [],
+  "unresolved_items": [
+    {
+      "item": "mystery",
+      "reason": "Drug name did not resolve exactly; parsed fields retained: {\"drug_name\":\"mystery\",\"dose_value\":null,\"dose_unit\":null,\"unit_kind\":null,\"frequency_per_day\":null,\"route\":null,\"duration_days\":null,\"form\":null,\"units_per_intake\":null,\"frequency_code\":null,\"as_needed\":false,\"one_time\":false,\"route_is_assumed\":false,\"parse_confidence\":\"LOW\",\"parse_notes\":[\"Slot pattern '7-3-1' has unequal non-zero quantities; frequency unresolved.\",\"frequency not stated or unresolved\",\"quantity per intake not stated\",\"Drug name did not resolve exactly; no medication checks applied.\"],\"unparsed_tokens\":[\"syrup\",\"xyz\"],\"source_line\":\"mystery syrup xyz 7-3-1\",\"name_used\":\"mystery\",\"llm_assisted\":false}"
+    },
+    {
+      "item": "mystery syrup xyz 7-3-1",
+      "reason": "Unparsed token: syrup"
+    },
+    {
+      "item": "mystery syrup xyz 7-3-1",
+      "reason": "Unparsed token: xyz"
+    },
+    {
+      "item": "mystery syrup xyz 7-3-1",
+      "reason": "Parser note: Slot pattern '7-3-1' has unequal non-zero quantities; frequency unresolved."
+    },
+    {
+      "item": "mystery syrup xyz 7-3-1",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "mystery syrup xyz 7-3-1",
+      "reason": "Parser note: quantity per intake not stated"
+    },
+    {
+      "item": "Lisinopril",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Lisinopril",
+      "reason": "Parser note: quantity per intake not stated"
+    },
+    {
+      "item": "Levothyroxine",
+      "reason": "Parser note: frequency not stated or unresolved"
+    },
+    {
+      "item": "Levothyroxine",
+      "reason": "Parser note: quantity per intake not stated"
+    }
+  ]
+}

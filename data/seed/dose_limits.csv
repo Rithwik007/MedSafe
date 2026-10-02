@@ -1,0 +1,2 @@
+rule_id,drug,route,population,age_min_years,age_max_years,dose_unit,max_single_dose,max_daily_dose,per_kg_basis,renal_note,source_name,source_url,source_section,accessed_on,reviewed_by,verified_on
+B19-DOSE-ATORVASTATIN-001,atorvastatin,oral,adults (age range not stated by label),,,mg,80,80,,,DailyMed — ATORVASTATIN CALCIUM tablet (prescription label),https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0e24e7cb-1949-6686-e063-6394a90a4760,2.2 Recommended Dosage in Adult Patients,2026-10-02,Codex (source text verified; not clinical review),2026-10-02

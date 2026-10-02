@@ -1,0 +1,30 @@
+MedSafe medication safety report
+Checkers: 1 RAN, 4 PARTIAL, 0 NOT_RUN_NO_DATA. Findings by severity: UNSPECIFIED 1. Absence of findings does not mean the prescription is safe.
+Generated at: 2026-10-02T13:15:21.851944+00:00
+Knowledge base SHA-256: 1d7ce256014c32eac174579b965f9df5ddafdf21e4daf83512b6f82e91b40ff5
+
+Checker status:
+- DDI: PARTIAL (313 rules; 174/313 loaded DDI rules have UNSPECIFIED severity (>25%). No class-level DDI rules loaded.)
+- DUPLICATE: RAN (2 rules; Duplicate policy loaded.)
+- ALLERGY: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; this is not clinical review. No patient allergy data supplied; no exact allergy match was evaluated.)
+- DRUG_DISEASE: PARTIAL (5 rules; 5 reviewed rows loaded. Coverage is a handful of source-text-checked label rows; condition matching uses exact phrases only and this is not clinical review. No patient condition data supplied; no exact drug-condition match was evaluated.)
+- DOSE: PARTIAL (1 rules; 1 reviewed dose row(s) loaded. Coverage is a few source-text-checked label rows; adult single-order checks only; this is not clinical review.)
+- ML estimate: ENABLED (Local checksum-verified model loaded; estimates remain unverified.)
+- LLM: DISABLED (Per-request use_llm flag is off.)
+
+Findings:
+- UNSPECIFIED: Dose limit exceeded for atorvastatin
+  Risk: Dose comparison for source row B19-DOSE-ATORVASTATIN-001, section 2.2 Recommended Dosage in Adult Patients: this order totals 240 mg per day (label daily maximum 80 mg) and 80 mg per intake (label single maximum 80 mg).
+  Why: The comparison uses the recorded label row without unit conversion.
+  Trigger: Daily total is calculated from this order only; separate orders are not added.
+  Recommendation: Pharmacist review required; confirm the source label and patient context. Severity was not classified by the source.
+  Source: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0e24e7cb-1949-6686-e063-6394a90a4760
+  Review: Source text verified; not clinical review
+
+Unresolved items:
+- None.
+
+Suggested matches:
+- None.
+
+Disclaimer: Decision support demo only. A qualified clinician must review all results. No warning does not mean a prescription is safe.

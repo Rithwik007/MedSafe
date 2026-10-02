@@ -1,0 +1,17 @@
+alias,ingredients,source,verified,notes
+Crocin,,https://www.1mg.com/drugs/crocin-650-mg-tablet-90532; https://www.1mg.com/drugs/crocin-pain-relief-tablet-323789,no,Brand family has single-ingredient and caffeine combination variants; enter full product name.
+Crocin 650,paracetamol,https://www.1mg.com/drugs/crocin-650-mg-tablet-90532,yes,650 mg tablet product; strength is not used as a dose recommendation.
+Crocin Advance 500,paracetamol,https://www.1mg.com/drugs/crocin-advance-tablet-600468,yes,1mg lists Crocin Advance 500mg as paracetamol 500mg; shorthand Crocin 500mg omits product variant.
+Crocin Pain Relief,caffeine|paracetamol,https://www.1mg.com/drugs/crocin-pain-relief-tablet-323789,yes,Specific combination tablet product.
+Dolo,,https://www.1mg.com/drugs/650-dolo-650-tablet-in-hindi-74467; https://www.1mg.com/drugs/Dolo-Tablet-1051266,no,Brand family includes paracetamol-only and caffeine combination variants; enter full product name.
+Dolo 650,paracetamol,https://www.1mg.com/drugs/650-dolo-650-tablet-in-hindi-74467,yes,650 mg tablet product; strength is not used as a dose recommendation.
+Dolo Xtraa,caffeine|paracetamol,https://www.1mg.com/drugs/Dolo-Tablet-1051266,yes,Specific combination tablet product.
+Augmentin,amoxicillin|clavulanic acid,https://india-pharma.gsk.com/media/3wpapw52/augmentin-duo-tablets.pdf; https://www.1mg.com/drugs/Augmentin-Tablet-325424,yes,Product family has formulation strengths; ingredients only, not dose equivalence.
+Augmentin 625,amoxicillin|clavulanic acid,https://india-pharma.gsk.com/media/3wpapw52/augmentin-duo-tablets.pdf,yes,500 mg amoxicillin plus 125 mg clavulanic acid tablet per cited product label.
+Glycomet,metformin,https://www.1mg.com/medicines/glycomet-21122,yes,Listed Glycomet products contain metformin; strength/form release not inferred.
+Brufen,,https://www.1mg.com/drugs/brufen-200-mg-tablet-70205; https://www.1mg.com/drugs/brufen-p-tablet-849608,no,Brand family includes ibuprofen-only and ibuprofen/paracetamol variants; enter full product name.
+Brufen 200,ibuprofen,https://www.1mg.com/drugs/brufen-200-mg-tablet-70205,yes,200 mg tablet product.
+Brufen 400,ibuprofen,https://www.1mg.com/drugs/Brufen-Tablet-1002088,yes,400 mg tablet contains ibuprofen.
+Brufen 600,ibuprofen,https://www.1mg.com/drugs/Brufen-Tablet-710718,yes,600 mg tablet product.
+Brufen P,ibuprofen|paracetamol,https://www.1mg.com/drugs/brufen-p-tablet-849608,yes,Specific combination tablet product.
+Combiflam,ibuprofen|paracetamol,https://www.1mg.com/drugs/combiflam-400mg-325mg-tablet-325414; https://www.1mg.com/drugs/combiflam-suspension-210470,yes,Tablet and suspension products contain both ingredients; product-specific strengths are not inferred.

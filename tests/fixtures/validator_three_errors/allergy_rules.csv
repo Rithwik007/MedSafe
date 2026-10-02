@@ -1,0 +1,2 @@
+rule_id,drug,allergen,match_type,label_category,reason,recommendation,source_name,source_url,source_section,accessed_on,reviewed_by,verified_on
+TEST_RULE,TEST_DRUG,TEST_ALLERGEN,TEST_MATCH,WARNING,,TEST_RECOMMENDATION_TEXT,TEST_SOURCE,ftp://example.invalid/source,TEST_SECTION,2020-01-01,TEST_REVIEWER,2020-01-02

@@ -1,0 +1,24 @@
+{
+  "copy_size_bytes": 8555245,
+  "excluded_count": 27,
+  "excluded_paths_report": "reports/b162_excluded_paths.txt",
+  "commands_report": "reports/b162_commands.json",
+  "data_seed_presence": {
+    "data/seed/rules.csv": true,
+    "data/seed/allergy_rules.csv": true,
+    "data/seed/drug_disease_rules.csv": true,
+    "data/seed/dose_limits.csv": true,
+    "data/seed/drug_classes.csv": true,
+    "data/seed/class_rules.csv": true
+  },
+  "env_example_kept": true,
+  "notice_adaptation_terms_check": true,
+  "notice_has_model_specific_ddinter_adaptation_language": false,
+  "baseline_hash_check": {
+    "baseline_files": 234,
+    "changed": [],
+    "missing": [],
+    "unchanged": true
+  },
+  "temp_copy_deleted": true
+}

@@ -1,0 +1,56 @@
+{
+  "source": "DDInter live interaction detail pages",
+  "checked_on": "2026-09-30",
+  "live_detail_pages_checked": true,
+  "live_detail_checks": [
+    {
+      "drugs": "Tramadol|Clarithromycin",
+      "csv_severity": "MODERATE",
+      "site_level": "Moderate",
+      "mechanism": "Synergy",
+      "detail_url": "https://ddinter.scbdd.com/ddinter/interact/953108/",
+      "result": "PASS"
+    },
+    {
+      "drugs": "Ciprofloxacin|Simvastatin",
+      "csv_severity": "MODERATE",
+      "site_level": "Moderate",
+      "mechanism": "Metabolism",
+      "detail_url": "https://ddinter.scbdd.com/ddinter/interact/1013641/",
+      "result": "PASS"
+    },
+    {
+      "drugs": "Spironolactone|Warfarin",
+      "csv_severity": "MINOR",
+      "site_level": "Minor",
+      "mechanism": "Antagonism",
+      "detail_url": "https://ddinter.scbdd.com/ddinter/interact/1006791/",
+      "result": "PASS"
+    },
+    {
+      "drugs": "Digoxin|Levothyroxine",
+      "csv_severity": "MODERATE",
+      "site_level": "Moderate",
+      "mechanism": "Metabolism",
+      "detail_url": "https://ddinter.scbdd.com/ddinter/interact/1034059/",
+      "result": "PASS"
+    },
+    {
+      "drugs": "Warfarin|Ibuprofen",
+      "csv_severity": "MAJOR",
+      "site_level": "Major",
+      "mechanism": "Synergy",
+      "detail_url": "https://ddinter.scbdd.com/ddinter/interact/957806/",
+      "result": "PASS"
+    }
+  ],
+  "live_passed": 5,
+  "live_failed": 0,
+  "csv_integrity_spotcheck": {
+    "method": "random.Random(42) source CSV comparison",
+    "sample_size": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "interpretation": "Checks confirm imported names and severity labels match DDInter pages. They do not establish independent clinical correctness."
+}

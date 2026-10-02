@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B2545">
+  <title>MedSafe</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">M</span><div><h1>MedSafe</h1><p id="app-version">Research prototype</p></div></div>
+  </header>
+  <div class="fixed-banner" role="note">Research prototype. Decision support only. Pharmacist review required. Use synthetic data only.</div>
+  <main class="layout">
+    <section class="panel input-panel" aria-labelledby="input-title">
+      <div class="panel-heading"><div><p class="eyebrow">Prescription review</p><h2 id="input-title">Enter synthetic details</h2></div></div>
+      <label for="prescription">Prescription orders <span class="required-note">one order per line</span></label>
+      <textarea id="prescription" maxlength="5000" rows="5" placeholder="Example: Warfarin 5 mg OD"></textarea>
+      <label for="current-meds">Current medicines <span class="optional-note">optional; one per line or comma separated</span></label>
+      <textarea id="current-meds" maxlength="4000" rows="2" placeholder="Medicine names"></textarea>
+      <div class="two-columns">
+        <div><label for="allergies">Allergies <span class="optional-note">optional</span></label><textarea id="allergies" maxlength="4000" rows="3" placeholder="One per line or comma separated"></textarea></div>
+        <div><label for="diagnoses">Diagnoses <span class="optional-note">optional</span></label><textarea id="diagnoses" maxlength="4000" rows="3" placeholder="One per line or comma separated"></textarea></div>
+      </div>
+      <div class="options-row">
+        <label class="check-label"><input id="show-ml" type="checkbox" checked><span>Show ML estimates</span></label>
+        <label class="check-label" id="llm-option"><input id="use-llm" type="checkbox" disabled><span>AI plain-language explanation</span><span id="llm-note" class="optional-note">checking availability…</span></label>
+        <label class="age-label" for="age-years">Age in years <span class="optional-note">optional</span><input id="age-years" type="number" min="0" max="120" step="1" inputmode="numeric"></label>
+      </div>
+      <div class="button-row">
+        <button id="analyze" class="button primary" type="button">Analyze</button>
+        <button id="clear" class="button secondary" type="button">Clear</button>
+      </div>
+      <fieldset class="examples"><legend>Load synthetic example</legend><div class="example-buttons">
+        <button class="button example" type="button" data-example="1">Example 1</button>
+        <button class="button example" type="button" data-example="2">Example 2</button>
+        <button class="button example" type="button" data-example="3">Example 3</button>
+      </div></fieldset>
+      <p class="field-limit">Inputs are limited in length and count.</p>
+    </section>
+
+    <section class="panel output-panel" aria-labelledby="output-title">
+      <div class="output-heading"><div><p class="eyebrow">Analysis output</p><h2 id="output-title">Report</h2></div><div class="output-actions"><button id="copy" class="button secondary small" type="button" disabled>Copy</button><button id="print" class="button secondary small" type="button" disabled>Print</button></div></div>
+      <div id="results" class="results" aria-live="polite" aria-busy="false">
+        <p class="idle-message">Load a synthetic example or enter an order, then select Analyze.</p>
+      </div>
+    </section>
+  </main>
+  <footer>MedSafe <span id="footer-version"></span> · Research prototype</footer>
+</body>
+</html>
+

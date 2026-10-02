@@ -1,0 +1,15 @@
+Promotion output:
+allergy_rules.csv: promoted=[B14-ALG-001, B14-ALG-002, B14-ALG-003, B14-ALG-004, B14-ALG-005]; not promoted=[]
+drug_disease_rules.csv: promoted=[B14-DIS-001, B14-DIS-002, B14-DIS-003, B14-DIS-004, B14-DIS-005]; not promoted=[]
+dose_limits.csv: promoted=[]; not promoted=[]
+
+Validator output:
+WARNING drug_disease_rules.csv: row 2, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 3, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 4, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 5, column condition: condition not in conditions.csv
+WARNING drug_disease_rules.csv: row 6, column condition: condition not in conditions.csv
+allergy_rules.csv: 5 rows
+drug_disease_rules.csv: 5 rows
+dose_limits.csv: 0 rows
+Summary: 0 errors, 5 warnings

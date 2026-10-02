@@ -1,0 +1,3 @@
+level,atc_prefix_length,severity,message_template,rationale,recommendation,status
+INGREDIENT,,MODERATE,"{ingredient} appears in {order_a} and in {order_b}.","project design choice, not a clinical rule","Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",DESIGN_DECISION
+ATC_CLASS,5,MODERATE,"{ingredient_a} and {ingredient_b} share ATC class {atc_code} in {order_a} and {order_b}.","project design choice, not a clinical rule","Confirm both orders are intended. Ask the prescriber or pharmacist to check the combined daily amount of the shared ingredient.",DESIGN_DECISION

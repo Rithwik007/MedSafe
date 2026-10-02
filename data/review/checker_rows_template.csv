@@ -1,0 +1,2 @@
+rule_id,drug,allergen,match_type,label_category,reason,recommendation,source_name,source_url,source_section,accessed_on,reviewed_by,verified_on,condition,population,age_min_years,age_max_years,route,dose_unit,max_single_dose,max_daily_dose,per_kg_basis,renal_note
+EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY,EXAMPLE_ONLY

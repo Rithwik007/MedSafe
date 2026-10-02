@@ -1,0 +1,9 @@
+{
+  "old_tau": 0.3433901063125201,
+  "new_tau": 0.7054264738830898,
+  "validation_coverage": 0.8754281040740173,
+  "validation_covered_accuracy": 0.9500175172252715,
+  "validation_major_precision": 0.9085635359116022,
+  "covered_count": 17126,
+  "covered_major_count": 3620
+}
